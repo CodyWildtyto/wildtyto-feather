@@ -7,12 +7,12 @@ export default class Navigator extends React.Component {
 
         super(_props);
         this.state = {
-                isFullview: false
+                isNavmode: false
             };
 
         window.addEventListener("wheel", () => {
                 this.setState({
-                        isFullview: ( window.scrollY > 600 )
+                        isNavmode: ( window.scrollY > 400 )
                     });
             }, false);
 
@@ -21,13 +21,11 @@ export default class Navigator extends React.Component {
     render() {
 
         return (
-                <nav id="Navigator" className={`${ this.state.isFullview ? "fullview" : "" }`}>
-                    <h2>Hello!</h2>
-                    <h3>
-                        <p>I am a</p>
-                        <p>Full Stack Developer</p>
-                        <p>& UX Designer</p>
-                    </h3>
+                <nav id="Navigator" className={`${ this.state.isNavmode ? "navmode" : "" }`}>
+                    <a href="/#/">Hello</a>
+                    <a href="/#/Work">Work</a>
+                    <a href="/#/Projects">Projects</a>
+                    <a href="/#/About">About</a>
                 </nav>
             );
 

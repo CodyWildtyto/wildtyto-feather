@@ -1,49 +1,51 @@
 nav#Navigator {
-    display: flex;
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
+    top: 250px;
+    left: 100px;
+    width: 200px;
+    z-index: 6;
 }
 
-nav#Navigator h2 {
-    position: absolute;
-    top: 200px;
-    left: 15%;
-    font-size: 57px;
-    font-weight: 200;
+nav#Navigator a {
+    display: block;
+    visibility: hidden;
+    padding: 10px;
+    padding-right: 70px;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+    transition-duration: 300ms;
+    transition-property: color;
 }
 
-nav#Navigator.fullview h2,
-nav#Navigator.fullview h3 {
-    display: none;
+nav#Navigator a:hover {
+    color: #777;
 }
 
-nav#Navigator h3 {
-    position: absolute;
-    top: 300px;
-    left: 15%;
-    font-size: 30px;
-    font-weight: 300;
-    color: #ffffff;
+nav#Navigator.navmode a {
+    animation: nav-items-visible 300ms linear;
+    visibility: visible;
+    opacity: 1;
 }
 
-nav#Navigator h3 p {
-    margin: 0;
-}
-
-@media only screen and ( max-width: 1360px ) {
-
-    nav#Navigator h2 {
-        top: 180px;
-        font-size: 45px;
+@keyframes nav-items-visible {
+    from {
+        visibility: hidden;
+        opacity: 0;
     }
-
-    nav#Navigator h3 {
-        top: 250px;
-        font-size: 24px;
+    to {
+        visibility: visible;
+        opacity: 1;
     }
+}
 
+@keyframes nav-items-hidden {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
 }

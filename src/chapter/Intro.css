@@ -1,0 +1,49 @@
+#Intro {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#Intro h2 {
+    position: absolute;
+    top: 200px;
+    left: 15%;
+    font-size: 57px;
+    font-weight: 200;
+}
+
+#Intro.fullview h2,
+#Intro.fullview h3 {
+    display: none;
+}
+
+#Intro h3 {
+    position: absolute;
+    top: 300px;
+    left: 15%;
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#Intro h3 p {
+    margin: 0;
+}
+
+@media only screen and ( max-width: 1360px ) {
+
+    #Intro h2 {
+        top: 180px;
+        font-size: 45px;
+    }
+
+    #Intro h3 {
+        top: 250px;
+        font-size: 27px;
+    }
+
+}
