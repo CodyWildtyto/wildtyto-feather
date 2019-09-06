@@ -1,0 +1,5 @@
+section#About {
+    display: flex;
+    height: 600px;
+    background-color: #f3f3f3;
+}

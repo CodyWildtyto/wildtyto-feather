@@ -1,6 +1,6 @@
 section#Hello {
     display: flex;
-    margin-bottom: 600px;
+    margin-bottom: 400px;
     padding-left: 450px;
     height: 560px;
     flex-direction: row;

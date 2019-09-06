@@ -2,10 +2,22 @@ section#Work {
     position: absolute;
     left: 0;
     right: 0;
-    height: 600px;
+    padding: 120px 70px 40px;
+    height: 400px;
     background-color: #f3f3f3;
-    margin-top: -600px;
+    margin-top: -400px;
     z-index: 5;
+    text-align: center;
+}
+
+section#Work h2 {
+    font-size: 40px;
+}
+
+
+section#Work p {
+    margin: auto;
+    width: 600px;
 }
 
 #App > section:not(#Hello) {

@@ -12,7 +12,7 @@ export default class Intro extends React.Component {
 
         window.addEventListener("wheel", () => {
                 this.setState({
-                        isFullview: ( window.scrollY > 600 )
+                        isFullview: ( window.scrollY > 400 )
                     });
             }, false);
 

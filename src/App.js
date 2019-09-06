@@ -7,6 +7,10 @@ import Hello from './chapter/Hello';
 import Work from './chapter/Work';
 import Noper from './chapter/Noper';
 import Englishagency from './chapter/Englishagency';
+import Showhi from './chapter/Showhi';
+import Projects from './chapter/Projects';
+import About from './chapter/About';
+import Contact from './chapter/Contact';
 import './App.css';
 
 export default class App extends React.Component {
@@ -22,6 +26,10 @@ export default class App extends React.Component {
                     <Work></Work>
                     <Noper></Noper>
                     <Englishagency></Englishagency>
+                    <Showhi></Showhi>
+                    <Projects></Projects>
+                    <About></About>
+                    <Contact></Contact>
                 </article>
             );
     }

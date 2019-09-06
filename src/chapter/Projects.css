@@ -1,0 +1,5 @@
+section#Projects {
+    display: flex;
+    height: 500px;
+    background-color: #1c4b68;
+}
