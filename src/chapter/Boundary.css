@@ -1,0 +1,56 @@
+#Boundary {
+
+}
+
+#Boundary.fullview {
+    border-width: 30px;
+}
+
+#Boundary .boundary-item {
+    position: fixed;
+    z-index: 7;
+    background-color: #fff;
+    transition-duration: 300ms;
+}
+
+#Boundary .boundary-item__top,
+#Boundary .boundary-item__bottom {
+    left: 0;
+    right: 0;
+    height: 50px;
+    transition-property: height;
+}
+
+#Boundary .boundary-item__left,
+#Boundary .boundary-item__right {
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    transition-property: width;
+}
+
+#Boundary .boundary-item__top {
+    top: 0;
+}
+
+#Boundary .boundary-item__bottom {
+    bottom: 0;
+}
+
+#Boundary .boundary-item__left {
+    left: 0;
+}
+
+#Boundary .boundary-item__right {
+    right: 0;
+}
+
+#Boundary.fullview .boundary-item__top,
+#Boundary.fullview .boundary-item__bottom {
+    height: 30px;
+}
+
+#Boundary.fullview .boundary-item__left,
+#Boundary.fullview .boundary-item__right {
+    width: 30px;
+}

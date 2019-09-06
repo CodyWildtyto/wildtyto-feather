@@ -1,0 +1,13 @@
+section#Work {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 600px;
+    background-color: #f3f3f3;
+    margin-top: -600px;
+    z-index: 5;
+}
+
+#App > section:not(#Hello) {
+    border-left: 300px solid #ffffff;
+}

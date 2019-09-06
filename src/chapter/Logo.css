@@ -1,0 +1,43 @@
+#Logo {
+    position: fixed;
+    top: 100px;
+    left: 120px;
+    z-index: 9;
+    color: #ffffff;
+    transition: 300ms color;
+}
+
+#Logo.darkmode {
+    color: #000;
+}
+
+#Logo > img,
+#Logo > svg {
+    width: 70px;
+}
+
+#Logo > svg path {
+    transition: 300ms stroke;
+}
+
+#Logo.darkmode > svg path {
+    stroke: #000;
+}
+
+#Logo > span {
+    position: absolute;
+}
+
+#Logo > span:first-of-type {
+    top: 36px;
+    left: 65px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#Logo > span:last-of-type {
+    top: 55px;
+    left: 57px;
+    font-size: 12px;
+    font-weight: lighter;
+}
