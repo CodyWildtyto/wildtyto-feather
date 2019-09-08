@@ -24,6 +24,9 @@ export default class Logo extends React.Component {
         const _elementWithSVG = document.querySelector("#Logo img");
         const _url = _elementWithSVG.src || _elementWithSVG.data;
         _readSVGFile(_url, _onCallback);
+        this.setState({
+                isDarkmode: ( window.scrollY > 400 )
+            });
 
         function _onCallback(_response) {
             var _tempElement = document.createElement("div");

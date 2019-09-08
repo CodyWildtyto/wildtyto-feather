@@ -4,7 +4,7 @@ section#Hello {
     padding-left: 450px;
     height: 560px;
     flex-direction: row;
-    background-color: #e04747;
+    /*background-color: #e04747;*/
 }
 
 section#Hello .hello-shortcuts {

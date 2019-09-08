@@ -19,6 +19,12 @@ export default class Boundary extends React.Component {
 
     }
 
+    componentDidMount() {
+        this.setState({
+                isFullview: ( window.scrollY > 400 )
+            });
+    }
+
     render() {
 
         return (

@@ -18,6 +18,12 @@ export default class Navigator extends React.Component {
 
     }
 
+    componentDidMount() {
+        this.setState({
+                isNavmode: ( window.scrollY > 400 )
+            });
+    }
+
     render() {
 
         return (

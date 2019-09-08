@@ -1,5 +1,56 @@
 section#Noper {
     display: flex;
+    position: relative;
     height: 400px;
     background-color: #009ecc;
+}
+
+section#Noper .work-container {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+}
+
+section#Noper .work-container h2 {
+    display: flex;
+    position: relative;
+    padding-left: 42px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+}
+
+section#Noper .work-container img {
+    position: absolute;
+    left: 0;
+}
+
+section#Noper .work-container span {
+    margin-top: -3px;
+}
+
+section#Noper .work-specialities span {
+    background-color: #fff;
+    color: #009ecc;
+}
+
+section#Noper .work-explain {
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+section#Noper .work-preview {
+    top: 50%;
+    right: 75%;
+}
+
+section#Noper .work-preview img:first-of-type {
+    top: -150px;
+    left: -125px;
+}
+
+section#Noper .work-preview img:nth-of-type(2) {
+    top: -90px;
+    left: -15px;
 }

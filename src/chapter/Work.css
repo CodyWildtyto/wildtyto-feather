@@ -1,12 +1,12 @@
 section#Work {
-    position: absolute;
-    left: 0;
-    right: 0;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*right: 0;*/
     padding: 120px 70px 40px;
     height: 400px;
     background-color: #f3f3f3;
     margin-top: -400px;
-    z-index: 5;
+    /*z-index: 5;*/
     text-align: center;
 }
 
@@ -18,6 +18,34 @@ section#Work h2 {
 section#Work p {
     margin: auto;
     width: 600px;
+}
+
+.work-preview {
+    position: absolute;
+}
+
+.work-preview img {
+    position: absolute;
+}
+
+.work-container {
+    padding-right: 100px;
+}
+
+.work-specialities {
+}
+
+.work-specialities span {
+    display: inline-block;
+    margin-right: 7px;
+    padding: 1px 10px 2px;
+    border-radius: 10px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.work-explain {
+    font-size: 14px;
 }
 
 #App > section:not(#Hello) {

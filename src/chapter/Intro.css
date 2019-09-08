@@ -5,7 +5,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 3;
+    /*z-index: 3;*/
+    z-index: -1;
+    background-color: #e04747;
 }
 
 #Intro h2 {
@@ -18,7 +20,7 @@
 
 #Intro.fullview h2,
 #Intro.fullview h3 {
-    display: none;
+    /*display: none;*/
 }
 
 #Intro h3 {
