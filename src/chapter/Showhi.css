@@ -1,5 +1,48 @@
 section#Showhi {
     display: flex;
+    position: relative;
     height: 400px;
     background-color: #e04747;
+}
+
+section#Showhi .work-container {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    padding-right: 100px;
+}
+
+section#Showhi .work-container h2 {
+    display: flex;
+    position: relative;
+    padding-left: 42px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+}
+
+section#Showhi .work-container img {
+    position: absolute;
+    left: 0;
+}
+
+section#Showhi .work-specialities span {
+    background-color: #fff;
+    color: #009ecc;
+}
+
+section#Showhi .work-explain {
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+section#Showhi .work-preview {
+    top: 50%;
+    right: 75%;
+}
+
+section#Showhi .work-preview img:first-of-type {
+    top: -80px;
+    left: -150px;
 }

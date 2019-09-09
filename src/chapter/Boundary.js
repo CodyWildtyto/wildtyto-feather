@@ -13,7 +13,7 @@ export default class Boundary extends React.Component {
 
         window.addEventListener("wheel", () => {
                 this.setState({
-                        isFullview: ( window.scrollY > 400 )
+                        isFullview: ( window.scrollY > 300 )
                     });
             }, false);
 
@@ -21,7 +21,7 @@ export default class Boundary extends React.Component {
 
     componentDidMount() {
         this.setState({
-                isFullview: ( window.scrollY > 400 )
+                isFullview: ( window.scrollY > 300 )
             });
     }
 

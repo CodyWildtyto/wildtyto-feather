@@ -29,7 +29,7 @@ section#Work p {
 }
 
 .work-container {
-    padding-right: 100px;
+
 }
 
 .work-specialities {
@@ -46,6 +46,7 @@ section#Work p {
 
 .work-explain {
     font-size: 14px;
+    margin-top: 30px;
 }
 
 #App > section:not(#Hello) {

@@ -9,6 +9,7 @@ section#Noper .work-container {
     position: absolute;
     top: 60px;
     left: 50%;
+    padding-right: 100px;
 }
 
 section#Noper .work-container h2 {

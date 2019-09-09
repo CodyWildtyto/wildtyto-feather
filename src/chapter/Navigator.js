@@ -12,7 +12,7 @@ export default class Navigator extends React.Component {
 
         window.addEventListener("wheel", () => {
                 this.setState({
-                        isNavmode: ( window.scrollY > 400 )
+                        isNavmode: ( window.scrollY > 300 )
                     });
             }, false);
 
@@ -20,7 +20,7 @@ export default class Navigator extends React.Component {
 
     componentDidMount() {
         this.setState({
-                isNavmode: ( window.scrollY > 400 )
+                isNavmode: ( window.scrollY > 300 )
             });
     }
 

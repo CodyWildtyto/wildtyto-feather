@@ -1,5 +1,48 @@
 section#Englishagency {
     display: flex;
+    position: relative;
     height: 400px;
     background-color: #f3f3f3;
+}
+
+section#Englishagency .work-container {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 50%;
+    padding-left: 100px;
+}
+
+section#Englishagency .work-container h2 {
+    display: flex;
+    position: relative;
+    padding-left: 42px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+section#Englishagency .work-container img {
+    position: absolute;
+    left: 0;
+}
+
+section#Englishagency .work-specialities span {
+    background-color: #fff;
+    color: #8e8e8e;
+}
+
+section#Englishagency .work-preview {
+    top: 50%;
+    left: 75%;
+}
+
+section#Englishagency .work-preview img:first-of-type {
+    top: -100px;
+    left: -180px;
+}
+
+section#Englishagency .work-preview img:nth-of-type(2) {
+    top: -50px;
+    left: -210px;
 }
