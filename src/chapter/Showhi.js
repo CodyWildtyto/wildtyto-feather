@@ -10,7 +10,7 @@ export default class Showhi extends React.Component {
         return (
                 <section id="Showhi">
                     <div className="work-preview">
-                        <img src={ showhiPicture1 } alt="showhi-1" style={ { height: 180 } } />
+                        <img src={ showhiPicture1 } alt="showhi-1" style={ { height: 200 } } />
                     </div>
                     <div className="work-container">
                         <h2>

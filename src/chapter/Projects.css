@@ -1,5 +1,44 @@
 section#Projects {
-    display: flex;
-    height: 500px;
+    padding: 50px 70px 40px;
+    height: 700px;
     background-color: #1c4b68;
+    text-align: center;
+    color: #fff;
+}
+
+section#Projects h2 {
+    font-size: 40px;
+}
+
+section#Projects > p {
+    margin: auto;
+    width: 600px;
+}
+
+section#Projects .projects-container {
+    display: flex;
+    margin-top: 150px;
+}
+
+section#Projects .projects-project-item {
+    position: relative;
+    flex-grow: 1;
+}
+
+section#Projects .projects-project-item img {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section#Projects .projects-project-item h3 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+section#Projects .projects-project-1 {
+}
+
+section#Projects .projects-project-2 {
 }
