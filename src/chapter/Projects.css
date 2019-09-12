@@ -23,6 +23,8 @@ section#Projects .projects-container {
 section#Projects .projects-project-item {
     position: relative;
     flex-grow: 1;
+    padding: 0 50px;
+    width: 50%;
 }
 
 section#Projects .projects-project-item img {
@@ -35,6 +37,26 @@ section#Projects .projects-project-item img {
 section#Projects .projects-project-item h3 {
     font-size: 30px;
     font-weight: 200;
+}
+
+section#Projects .projects-project-item p {
+    margin-bottom: 30px;
+}
+
+section#Projects .projects-project-item a {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    padding: 6px 16px;
+    transform: translateX(-50%);
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+section#Projects .projects-project-item a:hover {
+    background-color: #ffffff;
+    color: #1c4b68;
 }
 
 section#Projects .projects-project-1 {

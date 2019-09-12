@@ -11,8 +11,8 @@ export default class Noper extends React.Component {
         return (
                 <section id="Noper">
                     <div className="work-preview">
-                        <img src={ noperPicture1 } alt="noper-1" style={ { height: 250 } } />
-                        <img src={ noperPicture2 } alt="noper-2" style={ { height: 250 } } />
+                        <img src={ noperPicture1 } alt="noper-1" style={ { height: 360 } } />
+                        <img src={ noperPicture2 } alt="noper-2" style={ { height: 360 } } />
                     </div>
                     <div className="work-container">
                         <h2>

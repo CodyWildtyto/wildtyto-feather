@@ -1,12 +1,21 @@
-nav#Navigator {
+#Navigator {
+    position: absolute;
+    top: 560px;
+    bottom: 0;
+    /*width: 200px;*/
+    width: 300px;
+    background-color: #ffffff;
+    z-index: 6;
+}
+
+#Navigator nav {
     position: fixed;
     bottom: 150px;
     left: 100px;
     width: 200px;
-    z-index: 6;
 }
 
-nav#Navigator a {
+#Navigator a {
     display: block;
     visibility: hidden;
     padding: 10px;
@@ -17,13 +26,14 @@ nav#Navigator a {
     font-weight: 300;
     transition-duration: 300ms;
     transition-property: color;
-}
-
-nav#Navigator a:hover {
     color: #777;
 }
 
-nav#Navigator.navmode a {
+#Navigator a:hover {
+    color: #3a3a3a;
+}
+
+#Navigator.navmode a {
     animation: nav-items-visible 300ms linear;
     visibility: visible;
     opacity: 1;
@@ -48,5 +58,12 @@ nav#Navigator.navmode a {
     to {
         visibility: hidden;
         opacity: 0;
+    }
+}
+
+@media only screen and ( max-width: 1360px ) {
+
+    #Navigator {
+        top: 450px;
     }
 }

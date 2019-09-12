@@ -27,12 +27,14 @@ export default class Navigator extends React.Component {
     render() {
 
         return (
-                <nav id="Navigator" className={`${ this.state.isNavmode ? "navmode" : "" }`}>
-                    <a href="/#/">Hello</a>
-                    <a href="/#/Work">Work</a>
-                    <a href="/#/Projects">Projects</a>
-                    <a href="/#/About">About</a>
-                </nav>
+                <div id="Navigator" className={`${ this.state.isNavmode ? "navmode" : "" }`}>
+                    <nav>
+                        <a href="/#/">Hello</a>
+                        <a href="/#/Work">Work</a>
+                        <a href="/#/Projects">Projects</a>
+                        <a href="/#/About">About</a>
+                    </nav>
+                </div>
             );
 
     }

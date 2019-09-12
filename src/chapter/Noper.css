@@ -1,15 +1,17 @@
 section#Noper {
     display: flex;
     position: relative;
-    height: 400px;
+    height: 600px;
     background-color: #009ecc;
 }
 
 section#Noper .work-container {
     position: absolute;
-    top: 60px;
+    top: 200px;
     left: 50%;
-    padding-right: 100px;
+    width: 45%;
+    padding-left: 30px;
+    padding-right: 10%;
 }
 
 section#Noper .work-container h2 {
@@ -43,15 +45,16 @@ section#Noper .work-explain {
 
 section#Noper .work-preview {
     top: 50%;
-    right: 75%;
+    right: 50%;
 }
 
 section#Noper .work-preview img:first-of-type {
-    top: -150px;
-    left: -125px;
+    top: -190px;
+    left: -470px;
+    /*margin-left: 20%;*/
 }
 
 section#Noper .work-preview img:nth-of-type(2) {
-    top: -90px;
-    left: -15px;
+    top: -190px;
+    left: -250px;
 }

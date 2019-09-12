@@ -42,7 +42,3 @@ section#Work p {
     font-size: 14px;
     margin-top: 30px;
 }
-
-#App > section:not(#Hello) {
-    border-left: 300px solid #ffffff;
-}

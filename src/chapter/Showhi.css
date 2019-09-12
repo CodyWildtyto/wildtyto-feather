@@ -1,48 +1,55 @@
 section#Showhi {
     display: flex;
     position: relative;
-    height: 400px;
+    height: 600px;
     background-color: #e04747;
+    background-size: 600px;
+    background-size: 40vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 55% 50%;
 }
 
 section#Showhi .work-container {
     position: absolute;
-    top: 60px;
+    top: 200px;
     left: 50%;
-    padding-right: 100px;
+    right: 10%;
+    padding: 30px;
+    background-color: #ffffff;
 }
 
 section#Showhi .work-container h2 {
     display: flex;
     position: relative;
-    padding-left: 42px;
+    margin-top: 0;
+    padding-left: 28px;
     line-height: 30px;
     font-size: 30px;
     font-weight: 200;
-    color: #fff;
 }
 
 section#Showhi .work-container img {
     position: absolute;
     left: 0;
+    margin-top: 3px;
 }
 
 section#Showhi .work-specialities span {
-    background-color: #fff;
-    color: #e04747;
+    background-color: #e04747;
+    color: #ffffff;
 }
 
 section#Showhi .work-explain {
     margin-top: 30px;
-    color: #ffffff;
 }
 
 section#Showhi .work-preview {
     top: 50%;
-    right: 75%;
+    right: 50%;
 }
 
 section#Showhi .work-preview img:first-of-type {
-    top: -80px;
-    left: -150px;
+    top: -150px;
+    left: -570px;
 }

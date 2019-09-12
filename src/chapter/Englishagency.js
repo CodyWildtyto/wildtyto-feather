@@ -31,8 +31,8 @@ export default class Englishagency extends React.Component {
                         </div>
                     </div>
                     <div className="work-preview">
-                        <img src={ englishagencyPicture2 } alt="englishagency-2" style={ { height: 180 } } />
-                        <img src={ englishagencyPicture1 } alt="englishagency-1" style={ { height: 170 } } />
+                        <img src={ englishagencyPicture2 } alt="englishagency-2" style={ { height: 300 } } />
+                        <img src={ englishagencyPicture1 } alt="englishagency-1" style={ { height: 300 } } />
                     </div>
                 </section>
             );
