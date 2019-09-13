@@ -6,14 +6,35 @@ import './Noper.css';
 
 export default class Noper extends React.Component {
 
+    constructor(_props) {
+
+        super(_props);
+        this.state = {
+                offsetY: 0
+            };
+
+        window.addEventListener("wheel", () => {
+                const _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
+                this.setState({
+                        offsetY1: _offsetY / 0.6 + 60 ,
+                        offsetY2: _offsetY / 0.7 + 0 ,
+                    });
+            }, false);
+
+    }
+
+    componentDidMount() {
+
+        this.setState({
+                sectionElement: document.getElementById("Noper")
+            });
+
+    }
+
     render() {
 
         return (
-                <section id="Noper">
-                    <div className="work-preview">
-                        <img src={ noperPicture1 } alt="noper-1" style={ { height: 360 } } />
-                        <img src={ noperPicture2 } alt="noper-2" style={ { height: 360 } } />
-                    </div>
+                <section id="Noper" style={ { backgroundImage: `url(${ noperPicture1 }), url(${ noperPicture2 })`, backgroundPositionY: `${ this.state.offsetY1 }px, ${ this.state.offsetY2 }px` } }>
                     <div className="work-container">
                         <h2>
                             <img src={ noperLogo } alt="noper-logo" style={ { height: 30 } } />

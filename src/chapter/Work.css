@@ -22,8 +22,8 @@ section#Work p {
     position: absolute;
 }
 
-.work-container {
-
+.work-container h2 {
+    margin-top: 0;
 }
 
 .work-specialities {
@@ -32,7 +32,7 @@ section#Work p {
 .work-specialities span {
     display: inline-block;
     margin-right: 7px;
-    padding: 1px 10px 2px;
+    padding: 2px 10px 3px;
     border-radius: 10px;
     font-size: 10px;
     line-height: 10px;

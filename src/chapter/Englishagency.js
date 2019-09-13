@@ -6,10 +6,35 @@ import './Englishagency.css';
 
 export default class Englishagency extends React.Component {
 
+    constructor(_props) {
+
+        super(_props);
+        this.state = {
+                offsetY: 0
+            };
+
+        window.addEventListener("wheel", () => {
+                const _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
+                this.setState({
+                        offsetY1: _offsetY / 0.6 + 160 ,
+                        offsetY2: _offsetY / 0.7 + 120 ,
+                    });
+            }, false);
+
+    }
+
+    componentDidMount() {
+
+        this.setState({
+                sectionElement: document.getElementById("Englishagency")
+            });
+
+    }
+
     render() {
 
         return (
-                <section id="Englishagency">
+                <section id="Englishagency" style={ { backgroundImage: `url(${ englishagencyPicture1 }), url(${ englishagencyPicture2 })`, backgroundPositionY: `${ this.state.offsetY1 }px, ${ this.state.offsetY2 }px` } }>
                     <div className="work-container">
                         <h2>
                             <img src={ englishagencyLogo } alt="noper-logo" style={ { height: 30 } } />
@@ -29,10 +54,6 @@ export default class Englishagency extends React.Component {
                         <div className="work-explain">
                             Content Publish
                         </div>
-                    </div>
-                    <div className="work-preview">
-                        <img src={ englishagencyPicture2 } alt="englishagency-2" style={ { height: 300 } } />
-                        <img src={ englishagencyPicture1 } alt="englishagency-1" style={ { height: 300 } } />
                     </div>
                 </section>
             );

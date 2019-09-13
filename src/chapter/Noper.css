@@ -3,6 +3,11 @@ section#Noper {
     position: relative;
     height: 600px;
     background-color: #009ecc;
+    background-size: 600px;
+    background-size: 16vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 55% 50%, 40% 30%;
 }
 
 section#Noper .work-container {
@@ -10,8 +15,8 @@ section#Noper .work-container {
     top: 200px;
     left: 50%;
     width: 45%;
-    padding-left: 30px;
-    padding-right: 10%;
+    padding: 30px;
+    background-color: #fff;
 }
 
 section#Noper .work-container h2 {
@@ -21,7 +26,6 @@ section#Noper .work-container h2 {
     line-height: 30px;
     font-size: 30px;
     font-weight: 200;
-    color: #fff;
 }
 
 section#Noper .work-container img {
@@ -34,13 +38,12 @@ section#Noper .work-container span {
 }
 
 section#Noper .work-specialities span {
-    background-color: #fff;
-    color: #009ecc;
+    background-color: #009ecc;
+    color: #ffffff;
 }
 
 section#Noper .work-explain {
     margin-top: 30px;
-    color: #ffffff;
 }
 
 section#Noper .work-preview {

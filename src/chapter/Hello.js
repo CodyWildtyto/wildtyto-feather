@@ -15,10 +15,7 @@ export default class Hello extends React.Component {
             };
 
         window.addEventListener("wheel", () => {
-                const _marginTop = this.state.sectionElement.style.marginTop.replace("px", "");
-                this.setState({
-                        offsetY: ( window.scrollY - _marginTop ) / 5 + 160
-                    });
+                this._getOffsetY();
             }, false);
 
     }
@@ -27,6 +24,17 @@ export default class Hello extends React.Component {
 
         this.setState({
                 sectionElement: document.querySelector("#Hello .hello-shortcuts")
+            });
+        this._getOffsetY();
+
+    }
+
+    _getOffsetY() {
+
+        const _element = this.state.sectionElement || document.querySelector("#Hello .hello-shortcuts") ;
+        const _marginTop = _element.style.marginTop.replace("px", "");
+        this.setState({
+                offsetY: ( window.scrollY - _marginTop ) / 5 + 120
             });
 
     }

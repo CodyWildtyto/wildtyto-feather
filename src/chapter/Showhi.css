@@ -22,7 +22,6 @@ section#Showhi .work-container {
 section#Showhi .work-container h2 {
     display: flex;
     position: relative;
-    margin-top: 0;
     padding-left: 28px;
     line-height: 30px;
     font-size: 30px;
