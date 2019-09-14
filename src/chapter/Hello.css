@@ -1,9 +1,8 @@
 section#Hello {
     display: flex;
     padding-left: 450px;
-    height: 560px;
+    height: 700px;
     flex-direction: row;
-    /*background-color: #e04747;*/
 }
 
 section#Hello .hello-shortcuts {
@@ -26,8 +25,8 @@ section#Hello .hello-shortcut-item {
     position: absolute;
     z-index: 6;
     padding: 30px;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 320px;
     background-position: top left;
     background-size: cover;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -69,6 +68,7 @@ section#Hello .hello-shortcut-item h5 {
 section#Hello .hello-noper {
     top: 0;
     left: 0;
+    height: 270px;
     background-size: 140%;
 }
 
@@ -79,23 +79,49 @@ section#Hello .hello-noper h4 {
 
 section#Hello .hello-about {
     top: 0;
-    left: 330px;
-    height: 250px;
+    left: 440px;
     background-position: center;
 }
 
 section#Hello .hello-work {
-    top: 230px;
+    top: 310px;
     left: 0;
-    height: 270px;
     background-position: top left;
     background-size: 120%;
 }
 
 section#Hello .hello-projects {
-    top: 280px;
-    left: 330px;
-    height: 270px;
+    top: 360px;
+    left: 440px;
+}
+
+@media only screen and ( max-width: 1600px ) {
+
+    section#Hello {
+        height: 560px;
+    }
+
+    section#Hello .hello-shortcut-item {
+        width: 300px;
+        height: 200px;
+    }
+
+    section#Hello .hello-about {
+        left: 330px;
+        height: 250px;
+    }
+
+    section#Hello .hello-work {
+        top: 230px;
+        height: 270px;
+    }
+
+    section#Hello .hello-projects {
+        top: 280px;
+        left: 330px;
+        height: 270px;
+    }
+
 }
 
 @media only screen and ( max-width: 1360px ) {

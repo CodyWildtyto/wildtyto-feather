@@ -4,10 +4,11 @@ section#Noper {
     height: 600px;
     background-color: #009ecc;
     background-size: 600px;
-    background-size: 16vw;
+    background-size: 14vw;
+    background-size: calc( 200px + 4vw );
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 55% 50%, 40% 30%;
+    background-position: 52% 50%, 38% 30%;
 }
 
 section#Noper .work-container {
