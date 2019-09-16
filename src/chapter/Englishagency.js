@@ -14,6 +14,9 @@ export default class Englishagency extends React.Component {
                 offsetY: 0
             };
         Wheel.add( () => {
+                const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
+                const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
+                if ( _isAbove || _isBelow ) return;
                 const _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
                 this.setState({
                         offsetY1: _offsetY / 0.6 + 160 ,

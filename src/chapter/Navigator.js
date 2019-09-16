@@ -34,6 +34,11 @@ export default class Navigator extends React.Component {
                         <a href="/#/Projects">Projects</a>
                         <a href="/#/About">About</a>
                     </nav>
+                    <p>
+                        <a href="https://github.com/Wildtyto">GitHub</a>
+                        <a href="https://www.linkedin.com/in/wildtyto/">LinkedIn</a>
+                        <a href="mailto:wildtyto@gmail.com">Mail</a>
+                    </p>
                 </div>
             );
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Wheel from './../factory/Wheel';
 import './Boundary.css';
 
 export default class Boundary extends React.Component {
@@ -10,12 +11,13 @@ export default class Boundary extends React.Component {
                 isFullview: false,
                 scrollTop: 0
             };
-
-        window.addEventListener("wheel", () => {
+        Wheel.add( () => {
+                const _isFullview = ( window.scrollY > 300 );
+                if ( this.state.isFullview === _isFullview ) return;
                 this.setState({
-                        isFullview: ( window.scrollY > 300 )
+                        isFullview: _isFullview
                     });
-            }, false);
+            } );
 
     }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Wheel from './../factory/Wheel';
 import './Intro.css';
 
 export default class Intro extends React.Component {
@@ -9,12 +10,13 @@ export default class Intro extends React.Component {
         this.state = {
                 isFullview: false
             };
-
-        window.addEventListener("wheel", () => {
+        Wheel.add( () => {
+                const _isFullview = ( window.scrollY > 400 );
+                if ( this.state.isFullview === _isFullview ) return;
                 this.setState({
-                        isFullview: ( window.scrollY > 400 )
+                        isFullview: _isFullview
                     });
-            }, false);
+            } );
 
     }
 

@@ -15,6 +15,9 @@ export default class Hello extends React.Component {
                 offsetY: 0
             };
         Wheel.add( () => {
+                const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
+                const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
+                if ( _isAbove || _isBelow ) return;
                 this._getOffsetY();
             } );
 

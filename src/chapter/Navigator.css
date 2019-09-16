@@ -15,7 +15,7 @@
     width: 200px;
 }
 
-#Navigator a {
+#Navigator nav a {
     display: block;
     visibility: hidden;
     padding: 10px;
@@ -29,14 +29,31 @@
     color: #777;
 }
 
-#Navigator a:hover {
+#Navigator nav a:hover {
     color: #3a3a3a;
 }
 
-#Navigator.navmode a {
+#Navigator.navmode nav a {
     animation: nav-items-visible 300ms linear;
     visibility: visible;
     opacity: 1;
+}
+
+#Navigator p {
+    display: flex;
+    position: fixed;
+    bottom: 70px;
+    left: 100px;
+    flex-direction: row;
+}
+
+#Navigator p a {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+#Navigator p a + a {
+    margin-left: 7px;
 }
 
 @keyframes nav-items-visible {
