@@ -1,58 +1,71 @@
 section#About {
+    display: flex;
     position: relative;
-    padding-top: 50px;
-    height: 800px;
+    padding: 220px 200px 0;
+    height: 1000px;
     background-color: #f3f3f3;
     text-align: center;
 }
 
 section#About h2 {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 0;
     font-size: 40px;
 }
 
 section#About h3 {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
     font-weight: 100;
     font-size: 47px;
 }
 
-section#About .about-row {
+section#About h4 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+section#About .about-profile {
     display: flex;
-    padding: 50px 60px;
-}
-
-section#About .about-column {
-    width: 50%;
     flex-grow: 1;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-right: 4vw;
 }
 
-section#About p.about-column {
-    padding: 0 100px;
-    padding-left: 60px;
-    text-align: left;
+section#About .about-bio {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    text-align:left;
 }
 
 section#About .about-avatar {
-    /*margin: 20px auto;*/
-    margin: auto;
-    width: 190px;
-    height: 190px;
+    margin-bottom: 80px;
+    width: 300px;
+    width: calc( 200px + 3vw );
+    height: 300px;
+    height: calc( 200px + 3vw );
     background-position: 55% 36%;
     background-size: 130%;
     background-repeat: no-repeat;
-    /*border-radius: 20px;*/
     /*border-radius: 100px;*/
 }
 
 section#About .about-skills {
     position: relative;
-    /*margin-top: 150px;*/
-    margin-left: 50px;
     padding: 20px;
-    min-width: 300px;
-    width: 75%;
+    width: 300px;
+    width: calc( 200px + 3vw );
     height: 220px;
+    height: calc( 200px + 3vw );
     background-color: #ccc;
     border-left: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
@@ -62,11 +75,30 @@ section#About .about-skills {
 section#About .about-skills span {
     position: absolute;
     display: inline-block;
-    padding: 2px 8px 3px;
+    padding: 1px 6px 2px;
     transform: translate(-50%, 50%);
     background-color: #e04747;
     border-radius: 10px;
     white-space: nowrap;
+    line-height: initial;
     font-size: 10px;
     color: #ffffff;
+}
+
+section#About .about-skills i {
+    position: absolute;
+    font-size: 14px;
+    color: #999;
+}
+
+section#About .about-skills i:first-of-type {
+    left: -20px;
+    top: 72px;
+    transform-origin: top left;
+    transform: rotateZ(-90deg);
+}
+
+section#About .about-skills i:nth-of-type(2) {
+    bottom: -17px;
+    right: 0;
 }

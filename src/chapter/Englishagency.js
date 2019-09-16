@@ -1,4 +1,5 @@
 import React from 'react';
+import Wheel from './../factory/Wheel';
 import englishagencyLogo from './work-englishagency-logo.png';
 import englishagencyPicture1 from './work-englishagency-pic-1.png';
 import englishagencyPicture2 from './work-englishagency-pic-2.png';
@@ -12,14 +13,13 @@ export default class Englishagency extends React.Component {
         this.state = {
                 offsetY: 0
             };
-
-        window.addEventListener("wheel", () => {
+        Wheel.add( () => {
                 const _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
                 this.setState({
                         offsetY1: _offsetY / 0.6 + 160 ,
                         offsetY2: _offsetY / 0.7 + 120 ,
                     });
-            }, false);
+            } );
 
     }
 

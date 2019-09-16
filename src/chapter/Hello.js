@@ -1,4 +1,5 @@
 import React from 'react';
+import Wheel from './../factory/Wheel';
 import helloNoper from './hello-noper.png';
 import helloCody from './hello-cody.png';
 import helloWork from './hello-work.png';
@@ -13,10 +14,9 @@ export default class Hello extends React.Component {
         this.state = {
                 offsetY: 0
             };
-
-        window.addEventListener("wheel", () => {
+        Wheel.add( () => {
                 this._getOffsetY();
-            }, false);
+            } );
 
     }
 

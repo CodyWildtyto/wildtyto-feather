@@ -1,4 +1,5 @@
 import React from 'react';
+import Wheel from './../factory/Wheel';
 import noperLogo from './work-noper-logo.png';
 import noperPicture1 from './work-noper-pic-1.png';
 import noperPicture2 from './work-noper-pic-2.png';
@@ -12,14 +13,13 @@ export default class Noper extends React.Component {
         this.state = {
                 offsetY: 0
             };
-
-        window.addEventListener("wheel", () => {
+        Wheel.add( () => {
                 const _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
                 this.setState({
                         offsetY1: _offsetY / 0.6 + 60 ,
                         offsetY2: _offsetY / 0.7 + 0 ,
                     });
-            }, false);
+            } );
 
     }
 

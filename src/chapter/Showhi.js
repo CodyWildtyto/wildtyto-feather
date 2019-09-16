@@ -1,4 +1,5 @@
 import React from 'react';
+import Wheel from './../factory/Wheel';
 import showhiLogo from './work-showhi-logo.png';
 import showhiPicture1 from './work-showhi-pic-1.png';
 import './Showhi.css';
@@ -11,12 +12,11 @@ export default class Showhi extends React.Component {
         this.state = {
                 offsetY: 0
             };
-
-        window.addEventListener("wheel", () => {
+        Wheel.add( () => {
                 this.setState({
                         offsetY: -( window.scrollY - this.state.sectionElement.offsetTop ) / 0.6 + 70
                     });
-            }, false);
+            } );
 
     }
 
