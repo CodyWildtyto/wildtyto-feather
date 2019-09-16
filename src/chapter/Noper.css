@@ -1,7 +1,7 @@
 section#Noper {
     display: flex;
     position: relative;
-    height: 600px;
+    height: 800px;
     background-color: #009ecc;
     background-size: 600px;
     background-size: 14vw;
@@ -13,7 +13,7 @@ section#Noper {
 
 section#Noper .work-container {
     position: absolute;
-    top: 200px;
+    top: 250px;
     left: 50%;
     width: 45%;
     padding: 30px;

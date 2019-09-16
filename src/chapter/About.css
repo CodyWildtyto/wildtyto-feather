@@ -1,7 +1,7 @@
 section#About {
     display: flex;
     position: relative;
-    padding: 0 calc( 100px + 3vw ) 0;
+    padding: 0 calc( 100px + 5vw ) 0;
     padding-top: 220px;
     height: 1000px;
     background-color: #f3f3f3;
@@ -51,9 +51,9 @@ section#About .about-bio {
 section#About .about-avatar {
     margin-bottom: 80px;
     width: 300px;
-    width: calc( 200px + 3vw );
+    width: calc( 150px + 4vw );
     height: 300px;
-    height: calc( 200px + 3vw );
+    height: calc( 150px + 4vw );
     background-position: 55% 36%;
     background-size: 130%;
     background-repeat: no-repeat;
@@ -64,9 +64,9 @@ section#About .about-skills {
     position: relative;
     padding: 20px;
     width: 300px;
-    width: calc( 200px + 3vw );
+    width: calc( 150px + 4vw );
     height: 220px;
-    height: calc( 200px + 3vw );
+    height: calc( 150px + 4vw );
     background-color: #ccc;
     border-left: 1px solid #aaa;
     border-bottom: 1px solid #aaa;

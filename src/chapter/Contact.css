@@ -1,7 +1,7 @@
 footer#Contact {
     display: flex;
-    padding-top: 50px;
-    height: 300px;
+    padding-top: 160px;
+    height: 600px;
     background-color: #3a3a3a;
     color: #ffffff;
     text-align: center;
@@ -9,6 +9,7 @@ footer#Contact {
 }
 
 footer#Contact h2 {
+    margin-bottom: 200px;
     font-size: 40px;
 }
 

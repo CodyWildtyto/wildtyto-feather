@@ -1,22 +1,24 @@
 section#Hello {
     display: flex;
     padding-left: 450px;
-    height: 700px;
+    height: 750px;
     flex-direction: row;
 }
 
 section#Hello .hello-shortcuts {
     display: flex;
     position: relative;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 20%;
+    margin-right: 30px;
+    width: 100%;
 }
 
 section#Hello .hello-shortcuts::before {
     position: absolute;
-    top: 170px;
+    top: 250px;
     left: -70px;
-    height: 100px;
+    height: 200px;
     border-left: 1px solid #ffffff;
     content: "";
 }
@@ -24,12 +26,13 @@ section#Hello .hello-shortcuts::before {
 section#Hello .hello-shortcut-item {
     position: absolute;
     z-index: 6;
-    padding: 30px;
-    width: 400px;
-    height: 320px;
-    background-position: top left;
+    padding: 40px;
+    width: 50%;
+    height: 50%;
     background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 section#Hello .hello-shortcut-item::before {
@@ -55,8 +58,9 @@ section#Hello .hello-shortcut-item h5 {
 }
 
 section#Hello .hello-shortcut-item h4 {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 300;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #fff;
 }
 
@@ -68,8 +72,10 @@ section#Hello .hello-shortcut-item h5 {
 section#Hello .hello-noper {
     top: 0;
     left: 0;
-    height: 270px;
+    background-position-x: left;
+    background-position-y: 45%;
     background-size: 140%;
+    background-color: #73a0e1;
 }
 
 section#Hello .hello-noper h4 {
@@ -77,89 +83,38 @@ section#Hello .hello-noper h4 {
     font-weight: 200;
 }
 
+section#Hello .hello-noper h5,
+section#Hello .hello-about h4 {
+    margin-top: 20px;
+}
+
 section#Hello .hello-about {
     top: 0;
-    left: 440px;
+    left: 50%;
     background-position: center;
 }
 
 section#Hello .hello-work {
-    top: 310px;
+    top: 50%;
     left: 0;
-    background-position: top left;
+    background-position: center left;
     background-size: 120%;
+    background-color: #c57165;
 }
 
 section#Hello .hello-projects {
-    top: 360px;
-    left: 440px;
-}
-
-@media only screen and ( max-width: 1600px ) {
-
-    section#Hello {
-        height: 560px;
-    }
-
-    section#Hello .hello-shortcut-item {
-        width: 300px;
-        height: 200px;
-    }
-
-    section#Hello .hello-about {
-        left: 330px;
-        height: 250px;
-    }
-
-    section#Hello .hello-work {
-        top: 230px;
-        height: 270px;
-    }
-
-    section#Hello .hello-projects {
-        top: 280px;
-        left: 330px;
-        height: 270px;
-    }
-
+    top: 50%;
+    left: 50%;
 }
 
 @media only screen and ( max-width: 1360px ) {
 
     section#Hello {
-        padding-left: 400px;
-        height: 450px;
+        height: 600px;
     }
 
     section#Hello .hello-shortcut-item {
-        padding: 20px;
-        width: 220px;
-        height: 190px;
-    }
-
-    section#Hello .hello-shortcut-item h4 {
-        font-size: 20px
-    }
-
-    section#Hello .hello-shortcut-item h5 {
-        font-size: 10px
-    }
-
-    section#Hello .hello-noper {
-        height: 140px;
-    }
-
-    section#Hello .hello-about {
-        left: 250px;
-    }
-
-    section#Hello .hello-work {
-        top: 170px;
-    }
-
-    section#Hello .hello-projects {
-        top: 210px;
-        left: 250px;
+        padding: 30px;
     }
 
 }

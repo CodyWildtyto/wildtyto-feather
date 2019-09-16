@@ -19,8 +19,8 @@ export default class Englishagency extends React.Component {
                 if ( _isAbove || _isBelow ) return;
                 const _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
                 this.setState({
-                        offsetY1: _offsetY / 0.6 + 160 ,
-                        offsetY2: _offsetY / 0.7 + 120 ,
+                        offsetY1: _offsetY / 0.6 + 220 ,
+                        offsetY2: _offsetY / 0.7 + 180 ,
                     });
             } );
 

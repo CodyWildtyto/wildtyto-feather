@@ -1,6 +1,6 @@
 #Navigator {
     position: absolute;
-    top: 700px;
+    top: 750px;
     bottom: 0;
     /*width: 200px;*/
     width: 300px;
@@ -81,7 +81,6 @@
 @media only screen and ( max-width: 1600px ) {
 
     #Navigator {
-        top: 560px;
     }
 }
 
@@ -89,7 +88,7 @@
 @media only screen and ( max-width: 1360px ) {
 
     #Navigator {
-        top: 450px;
+        top: 600px;
     }
 
 }

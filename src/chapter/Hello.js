@@ -15,10 +15,10 @@ export default class Hello extends React.Component {
                 offsetY: 0
             };
         Wheel.add( () => {
-                const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
-                const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
-                if ( _isAbove || _isBelow ) return;
-                this._getOffsetY();
+                // const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
+                // const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
+                // if ( _isAbove || _isBelow ) return;
+                // this._getOffsetY();
             } );
 
     }
@@ -28,7 +28,7 @@ export default class Hello extends React.Component {
         this.setState({
                 sectionElement: document.querySelector("#Hello .hello-shortcuts")
             });
-        this._getOffsetY();
+        // this._getOffsetY();
 
     }
 
@@ -37,16 +37,17 @@ export default class Hello extends React.Component {
         const _element = this.state.sectionElement || document.querySelector("#Hello .hello-shortcuts") ;
         const _marginTop = _element.style.marginTop.replace("px", "");
         this.setState({
-                offsetY: ( window.scrollY - _marginTop ) / 5 + 120
+                offsetY: ( window.scrollY - _marginTop ) / 5 + 150
             });
 
     }
 
     render() {
 
+                    // <div className="hello-shortcuts" style={ { marginTop: `${ this.state.offsetY }px` } }>
         return (
                 <section id="Hello">
-                    <div className="hello-shortcuts" style={ { marginTop: `${ this.state.offsetY }px` } }>
+                    <div className="hello-shortcuts">
                         <div className="hello-noper hello-shortcut-item" style={ { backgroundImage: `url(${ helloNoper })` } }>
                             <h5>The Recently Work</h5>
                             <h4>noper</h4>
