@@ -1,6 +1,6 @@
 footer#Contact {
     display: flex;
-    padding-top: 160px;
+    padding-top: 100px;
     height: 600px;
     background-color: #3a3a3a;
     color: #ffffff;
@@ -9,12 +9,38 @@ footer#Contact {
 }
 
 footer#Contact h2 {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     font-size: 40px;
 }
 
 footer#Contact h3 {
+    margin-top: 150px;
     font-size: 15px;
     font-weight: 300;
     color: #777777;
+}
+
+footer#Contact p {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer#Contact p a + a {
+    margin-left: 10px;
+}
+
+footer#Contact p a {
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+}
+
+footer#Contact p a svg path {
+    fill: #dddddd;
+    transition: 300ms fill;
+}
+
+footer#Contact p a:hover svg path {
+    fill: #ffffff;
 }
