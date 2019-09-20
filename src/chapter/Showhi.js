@@ -47,7 +47,9 @@ export default class Showhi extends React.Component {
                             <span>XMLHttpRequest</span>
                         </div>
                         <div className="work-explain">
-                            Content Publish
+                            <p>There is a social network for students who would like to study abroad and school recruiters who help students applying the university.</p>
+                            <p>School pages can be managed by the school recruiters. Students are able to contact and apply the university school directly. Also it is easy to send documents to each other in messaging system.</p>
+                            <p>I must designed a flexible web application system for appending different kind of tool like messaging, video communication plugin and file service.</p>
                         </div>
                     </div>
                 </section>

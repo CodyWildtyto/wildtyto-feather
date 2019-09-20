@@ -56,7 +56,9 @@ export default class Noper extends React.Component {
                             <span>Axios</span>
                         </div>
                         <div className="work-explain">
-                            We created a chat bot -- noper for focusing on key point tasks  in business conversation at messaging applications like LINE, or Facebook Messager.
+                            <p>We created a chat bot -- noper for focusing on main tasks in business conversation at messaging tools like LINE, or Facebook Messager.</p>
+                            <p>Team manager can assign mission to members. Bot will notify each one who is assigned to. Also the manager will be notified when the work's state is changed or complated.</p>
+                            <p>Two partners and I process the product. I am in charge of bot and web app development, and design of user interface. In concert with back end developer for API in GraphQL.</p>
                         </div>
                     </div>
                 </section>

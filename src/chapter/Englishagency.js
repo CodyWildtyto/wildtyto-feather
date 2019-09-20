@@ -55,7 +55,9 @@ export default class Englishagency extends React.Component {
                             <span>Request</span>
                         </div>
                         <div className="work-explain">
-                            Content Publish
+                            <p>Fortuitously, we had a idea with a partner company. It is a publishing platform for the recruiters of English schools to share knowledge. Helped the students who are interested to know the schools or culture before they go.</p>
+                            <p>The feature is static content in server rendering. Each article is easy to be found by search engine even if the recruiters publish article every time.</p>
+                            <p>Besides front end development, I built server rendering server in Node.js for adding each article files when anyone publishing.</p>
                         </div>
                     </div>
                 </section>

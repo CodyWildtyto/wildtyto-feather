@@ -6,20 +6,14 @@ section#Work {
 }
 
 section#Work h2 {
-    font-size: 40px;
+    font-size: 47px;
 }
 
 section#Work p {
     margin: auto;
+    margin-top: 50px;
     width: 600px;
-}
-
-.work-preview {
-    position: absolute;
-}
-
-.work-preview img {
-    position: absolute;
+    line-height: 1.3em;
 }
 
 .work-container h2 {

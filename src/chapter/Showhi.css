@@ -42,13 +42,3 @@ section#Showhi .work-specialities span {
 section#Showhi .work-explain {
     margin-top: 30px;
 }
-
-section#Showhi .work-preview {
-    top: 50%;
-    right: 50%;
-}
-
-section#Showhi .work-preview img:first-of-type {
-    top: -150px;
-    left: -570px;
-}

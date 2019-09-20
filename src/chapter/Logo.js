@@ -13,7 +13,7 @@ export default class Logo extends React.Component {
                 isDarkmode: false
             };
         Wheel.add( () => {
-                const _isDarkmode = ( window.scrollY > 400 );
+                const _isDarkmode = ( window.scrollY > 500 );
                 if ( this.state.isDarkmode === _isDarkmode ) return;
                 this.setState({
                         isDarkmode: _isDarkmode
@@ -26,7 +26,7 @@ export default class Logo extends React.Component {
 
         Svg.exchange("#Logo img");
         this.setState({
-                isDarkmode: ( window.scrollY > 400 )
+                isDarkmode: ( window.scrollY > 500 )
             });
 
     }

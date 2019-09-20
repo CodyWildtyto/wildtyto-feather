@@ -11,7 +11,6 @@ export default class Wheel {
                         if ( _callback instanceof Function ) _callback(_event);
                         return _callback;
                     } );
-                console.log(window.scrollY);
             }, false);
         this.isInitial = true;
 

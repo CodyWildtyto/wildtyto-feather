@@ -59,8 +59,8 @@ section#Hello .hello-shortcut-item h5 {
 
 section#Hello .hello-shortcut-item h4 {
     font-size: 36px;
-    font-weight: 300;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: 200;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #fff;
 }
 
