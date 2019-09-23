@@ -7,12 +7,12 @@ section#Englishagency {
     background-size: 10vw, 35vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 90% 50%, 90% 50%;
+    background-position: 93% 50%, 93% 50%;
 }
 
 section#Englishagency .work-container {
     position: absolute;
-    top: 220px;
+    top: 180px;
     width: 40%;
     right: 50%;
     padding: 30px;

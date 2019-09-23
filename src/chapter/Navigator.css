@@ -41,6 +41,12 @@
     color: #111111;
 }
 
+#Navigator nav a img {
+    height: 20px;
+    margin-bottom: -2px;
+    margin-left: 6px;
+}
+
 #Navigator p {
     display: flex;
     position: fixed;

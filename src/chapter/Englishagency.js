@@ -19,8 +19,8 @@ export default class Englishagency extends React.Component {
                 if ( _isAbove || _isBelow ) return;
                 const _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
                 this.setState({
-                        offsetY1: _offsetY / 0.6 + 220 ,
-                        offsetY2: _offsetY / 0.7 + 180 ,
+                        offsetY1: _offsetY / 0.6 + 300 ,
+                        offsetY2: _offsetY / 0.7 + 230 ,
                     });
             } );
 
@@ -59,6 +59,7 @@ export default class Englishagency extends React.Component {
                             <p>The feature is static content in server rendering. Each article is easy to be found by search engine even if the recruiters publish article every time.</p>
                             <p>Besides front end development, I built server rendering server in Node.js for adding each article files when anyone publishing.</p>
                         </div>
+                        <a href="https://tw.english.agency" target="_blank" rel="noopener noreferrer">DEMO</a>
                     </div>
                 </section>
             );

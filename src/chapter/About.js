@@ -40,12 +40,9 @@ export default class About extends React.Component {
                         </div>
                     </div>
                     <div className="about-bio">
-                        <p className="about-block">
-                            A pure JavaScript plugin that be able to insert SVG elements which are modifiable instead of IMG or OBJECT elements from SVG files.
-                        </p>
-                        <p className="about-block">
-                            A pure JavaScript plugin that be able to insert SVG elements which are modifiable instead of IMG or OBJECT elements from SVG files.
-                        </p>
+                        <p className="about-block">Since the first time I created my own website when I was 10 years old. I took a fancy to do creation of all about digital content. Such as animation, game and software. It defined my choice of my major in the future. Most of time, I am able to learn new skills of programming. However, I am concerned about the design and the thinking of the users. The point is the key I decided to major in media design. Because of that, I am good at both of web application development and user experience.</p>
+                        <p className="about-block">Recently, my colleague and I designed a service in a hackathon. After that, we rebuilt the idea to a new chat bot -- noper. It helped people who usually have business conversation at messaging tools when they were working. To manage and notify progress of the tasks with team members. We released the service for public for few monthes. Although there are many users registered our service, it is hard to be main income.</p>
+                        <p className="about-block">This years, I did full time front end developer jobs. And freelace full stack developer jobs for few times. That is interesting to have chance to create different kind of products. I like to work with people cooperatively. Also I am excited to face each challenge and solve them.</p>
                     </div>
                 </section>
             );

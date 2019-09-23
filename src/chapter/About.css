@@ -1,16 +1,15 @@
 section#About {
-    display: flex;
     position: relative;
-    padding: 0 calc( 100px + 5vw ) 0;
-    padding-top: 220px;
-    height: 1000px;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    min-height: 800px;
     background-color: #f3f3f3;
     text-align: center;
 }
 
 section#About h2 {
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 0;
@@ -19,7 +18,7 @@ section#About h2 {
 
 section#About h3 {
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
@@ -35,38 +34,36 @@ section#About h4 {
 
 section#About .about-profile {
     display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    margin-right: 100px;
-    margin-right: 4vw;
+    justify-content: center;
 }
 
 section#About .about-bio {
-    display: flex;
-    flex-grow: 2;
-    flex-direction: column;
-    text-align:left;
+    margin: auto;
+    width: 560px;
+    text-align: left;
+    text-align: justify;
+}
+
+section#About .about-bio p {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 section#About .about-avatar {
+    margin-right: 100px;
     margin-bottom: 80px;
-    width: 300px;
-    width: calc( 150px + 4vw );
-    height: 300px;
-    height: calc( 150px + 4vw );
+    width: 220px;
+    height: 220px;
     background-position: 55% 36%;
     background-size: 130%;
     background-repeat: no-repeat;
-    /*border-radius: 100px;*/
 }
 
 section#About .about-skills {
     position: relative;
     padding: 20px;
     width: 300px;
-    width: calc( 150px + 4vw );
     height: 220px;
-    height: calc( 150px + 4vw );
     background-color: #ccc;
     border-left: 1px solid #aaa;
     border-bottom: 1px solid #aaa;

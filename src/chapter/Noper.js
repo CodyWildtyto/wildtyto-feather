@@ -19,8 +19,8 @@ export default class Noper extends React.Component {
                 if ( _isAbove || _isBelow ) return;
                 const _offsetY = -( window.scrollY - this.state.sectionElement.offsetTop );
                 this.setState({
-                        offsetY1: _offsetY / 0.6 + 60 ,
-                        offsetY2: _offsetY / 0.7 + 0 ,
+                        offsetY1: _offsetY / 0.6 + 120 ,
+                        offsetY2: _offsetY / 0.7 + 50 ,
                     });
             } );
 
@@ -60,6 +60,7 @@ export default class Noper extends React.Component {
                             <p>Team manager can assign mission to members. Bot will notify each one who is assigned to. Also the manager will be notified when the work's state is changed or complated.</p>
                             <p>Two partners and I process the product. I am in charge of bot and web app development, and design of user interface. In concert with back end developer for API in GraphQL.</p>
                         </div>
+                        <a href="https://www.noper.in" target="_blank" rel="noopener noreferrer">DEMO</a>
                     </div>
                 </section>
             );

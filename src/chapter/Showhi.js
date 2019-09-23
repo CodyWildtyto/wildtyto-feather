@@ -17,7 +17,7 @@ export default class Showhi extends React.Component {
                 const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
                 if ( _isAbove || _isBelow ) return;
                 this.setState({
-                        offsetY: -( window.scrollY - this.state.sectionElement.offsetTop ) / 0.6 + 70
+                        offsetY: -( window.scrollY - this.state.sectionElement.offsetTop ) / 0.6 + 120
                     });
             } );
 

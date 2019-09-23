@@ -1,6 +1,6 @@
 section#Projects {
     padding: 50px 70px 40px;
-    height: 700px;
+    height: 800px;
     background-color: #1c4b68;
     text-align: center;
     color: #fff;
@@ -17,7 +17,7 @@ section#Projects > p {
 
 section#Projects .projects-container {
     display: flex;
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 section#Projects .projects-project-item {

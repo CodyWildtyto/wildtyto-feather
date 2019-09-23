@@ -20,6 +20,23 @@ section#Work p {
     margin-top: 0;
 }
 
+.work-container > a {
+    position: absolute;
+    bottom: -20px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 36px 12px;
+    font-size: 14px;
+    background-color: #333;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 300ms background-color;
+}
+
+.work-container > a:hover {
+    background-color: #777;
+}
+
 .work-specialities {
 }
 
