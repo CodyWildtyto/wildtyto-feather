@@ -9,15 +9,20 @@ export default class Showhi extends React.Component {
     constructor(_props) {
 
         super(_props);
+        const _defaultOffsetY = 70;
         this.state = {
-                offsetY: 0
+                offsetY: _defaultOffsetY
             };
         Wheel.add( () => {
-                const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
-                const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
-                if ( _isAbove || _isBelow ) return;
+                let _offsetY = 0;
+                if ( window.innerWidth > 1024 ) {
+                    const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
+                    const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
+                    if ( _isAbove || _isBelow ) return;
+                    _offsetY = -( window.scrollY - this.state.sectionElement.offsetTop );
+                }
                 this.setState({
-                        offsetY: -( window.scrollY - this.state.sectionElement.offsetTop ) / 0.6 + 120
+                        offsetY: _offsetY / 0.6 + _defaultOffsetY
                     });
             } );
 

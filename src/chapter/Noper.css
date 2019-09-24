@@ -46,3 +46,21 @@ section#Noper .work-specialities span {
 section#Noper .work-explain {
     margin-top: 30px;
 }
+
+@media only screen and ( max-width: 1023px ) {
+
+    section#Noper {
+        height: 900px;
+        background-position: 80% 20%, 25% 11%;
+        background-size: 160px;
+        background-attachment: scroll;
+    }
+
+    section#Noper .work-container {
+        top: 340px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+    }
+
+}

@@ -1,18 +1,18 @@
 section#Work {
-    padding: 120px 70px 0;
-    height: 500px;
+    padding: 120px 70px 140px;
     background-color: #f3f3f3;
     text-align: center;
 }
 
 section#Work h2 {
+    margin: 0;
     font-size: 47px;
 }
 
 section#Work p {
     margin: auto;
     margin-top: 50px;
-    width: 600px;
+    max-width: 600px;
     line-height: 1.3em;
 }
 
@@ -52,4 +52,21 @@ section#Work p {
 .work-explain {
     font-size: 14px;
     margin-top: 30px;
+}
+
+@media only screen and ( max-width: 1023px ) {
+
+    section#Work {
+        padding: 50px 50px 60px;
+    }
+
+    section#Work p {
+        margin-top: 30px;
+    }
+
+    .work-container > a {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 }

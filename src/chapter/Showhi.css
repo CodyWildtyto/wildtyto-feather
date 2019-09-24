@@ -42,3 +42,21 @@ section#Showhi .work-specialities span {
 section#Showhi .work-explain {
     margin-top: 30px;
 }
+
+@media only screen and ( max-width: 1023px ) {
+
+    section#Showhi {
+        height: 750px;
+        background-position: 50% 70%;
+        background-size: 350px;
+        background-attachment: scroll;
+    }
+
+    section#Showhi .work-container {
+        top: 260px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+    }
+
+}

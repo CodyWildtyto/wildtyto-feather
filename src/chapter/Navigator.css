@@ -2,7 +2,6 @@
     position: absolute;
     top: 750px;
     bottom: 0;
-    /*width: 200px;*/
     width: 300px;
     background-color: #ffffff;
     z-index: 6;
@@ -111,11 +110,36 @@
     }
 }
 
-
 @media only screen and ( max-width: 1360px ) {
 
     #Navigator {
         top: 600px;
+    }
+
+}
+
+@media only screen and ( max-width: 1023px ) {
+
+    #Navigator {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: 70px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #Navigator nav {
+        display: none;
+    }
+
+    #Navigator p {
+        display: none;
+        /*position: absolute;*/
+        /*top: 400px;*/
+        /*left: 125px;*/
     }
 
 }

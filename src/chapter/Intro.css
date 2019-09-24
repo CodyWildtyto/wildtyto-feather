@@ -41,3 +41,15 @@
     }
 
 }
+
+@media only screen and ( max-width: 1023px ) {
+
+    #Intro h2 {
+        top: 100px;
+    }
+
+    #Intro h3 {
+        top: 250px;
+    }
+
+}

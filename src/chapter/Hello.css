@@ -118,3 +118,16 @@ section#Hello .hello-projects {
     }
 
 }
+
+@media only screen and ( max-width: 1023px ) {
+
+    section#Hello {
+        padding-left: 0;
+        height: 500px;
+    }
+
+    section#Hello .hello-shortcuts {
+        display: none;
+    }
+
+}

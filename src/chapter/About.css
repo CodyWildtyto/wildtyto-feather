@@ -39,7 +39,7 @@ section#About .about-profile {
 
 section#About .about-bio {
     margin: auto;
-    width: 560px;
+    max-width: 560px;
     text-align: left;
     text-align: justify;
 }
@@ -99,4 +99,41 @@ section#About .about-skills i:first-of-type {
 section#About .about-skills i:nth-of-type(2) {
     bottom: -17px;
     right: 0;
+}
+
+@media only screen and ( max-width: 1023px ) {
+
+    section#About {
+        padding-bottom: 50px;
+        padding-top: 200px;
+    }
+
+    section#About h3 {
+        font-size: 32px
+    }
+
+    section#About .about-profile {
+        flex-direction: column;
+    }
+
+    section#About .about-avatar,
+    section#About .about-skills {
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#About .about-avatar {
+    }
+
+    section#About .about-skills {
+        width: 220px;
+    }
+
+    section#About .about-bio {
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 13px;
+    }
+
 }

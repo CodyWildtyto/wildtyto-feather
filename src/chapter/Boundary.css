@@ -54,3 +54,11 @@
 #Boundary.fullview .boundary-item__right {
     width: 30px;
 }
+
+@media only screen and ( max-width: 1023px ) {
+
+    #Boundary {
+        display: none;
+    }
+
+}

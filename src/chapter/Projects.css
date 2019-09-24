@@ -1,6 +1,5 @@
 section#Projects {
-    padding: 50px 70px 40px;
-    height: 800px;
+    padding: 50px 70px 120px;
     background-color: #1c4b68;
     text-align: center;
     color: #fff;
@@ -12,7 +11,7 @@ section#Projects h2 {
 
 section#Projects > p {
     margin: auto;
-    width: 600px;
+    max-width: 600px;
 }
 
 section#Projects .projects-container {
@@ -63,4 +62,23 @@ section#Projects .projects-project-1 {
 }
 
 section#Projects .projects-project-2 {
+}
+
+@media only screen and ( max-width: 1023px ) {
+
+    section#Projects .projects-container {
+        margin-top: 150px;
+        flex-direction: column;
+    }
+
+    section#Projects .projects-project-item {
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+    }
+
+    section#Projects .projects-project-item + .projects-project-item {
+        margin-top: 200px;
+    }
+
 }
