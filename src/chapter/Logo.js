@@ -13,7 +13,7 @@ export default class Logo extends React.Component {
                 isDarkmode: false
             };
         Wheel.add( () => {
-                const _isDarkmode = ( window.scrollY > 500 );
+                const _isDarkmode = ( window.innerWidth > 1023 ) ? ( window.scrollY > 500 ) : ( window.scrollY > 20 );
                 if ( this.state.isDarkmode === _isDarkmode ) return;
                 this.setState({
                         isDarkmode: _isDarkmode

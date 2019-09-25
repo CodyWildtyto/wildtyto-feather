@@ -45,30 +45,28 @@
 @media only screen and ( max-width: 1023px ) {
 
     #Logo {
-        top: 16px;
-        left: 50%;
+        position: absolute;
+        top: 50px;
+        left: 36px;
         transform-origin: top;
-        transform: translateX(-50%) scale(0.6);
-        color: #000000;
+        transform: scale(0.4);
+    }
+
+    #Logo.darkmode {
+        position: fixed;
+        top: 22px;
     }
 
     #Logo > span:first-of-type {
-        top: 20px;
-        left: auto;
-        right: 75px;
-        transform-origin: top right;
+        margin-top: -7px;
+        transform-origin: top left;
         transform: scale(1.5);
     }
 
     #Logo > span:last-of-type {
-        top: 23px;
-        left: 70px;
+        margin-left: -3px;
         transform-origin: top left;
-        transform: scale(1.8);
-    }
-
-    #Logo > svg path {
-        stroke: #000;
+        transform: scale(1.5);
     }
 
 }

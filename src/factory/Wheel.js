@@ -8,6 +8,7 @@ export default class Wheel {
         this._inspectList();
         window.addEventListener("wheel", _onWheel, false);
         window.addEventListener("touchmove", _onWheel, false);
+        window.addEventListener("resize", _onWheel, false);
         this.isInitial = true;
 
         function _onWheel(_event) {

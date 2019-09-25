@@ -1,4 +1,5 @@
 import React from 'react';
+import Wheel from './../factory/Wheel';
 import Svg from './../factory/Svg';
 import iconGithub from './../image/nav-github-icon.svg';
 import iconLinkedin from './../image/nav-linkedin-icon.svg';
@@ -14,9 +15,8 @@ export default class Navigator extends React.Component {
                 isNavmode: false,
                 isBottom: false
             };
-
-        window.addEventListener("wheel", () => {
-                const _isNavmode = ( window.scrollY > 300 );
+        Wheel.add( () => {
+                const _isNavmode = ( window.innerWidth > 1023 ) ? ( window.scrollY > 300 ) : ( window.scrollY > 20 ) ;
                 if ( this.state.isNavmode !== _isNavmode ) this.setState({
                         isNavmode: _isNavmode
                     });
@@ -24,7 +24,7 @@ export default class Navigator extends React.Component {
                 if ( this.state.isBottom !== _isBottom ) this.setState({
                         isBottom: _isBottom
                     });
-            }, false);
+            } );
 
     }
 
