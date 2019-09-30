@@ -1,4 +1,5 @@
 import React from 'react';
+import Hash from './../factory/Hash';
 import Wheel from './../factory/Wheel';
 import noperLogo from './work-noper-logo.png';
 import noperPicture1 from './work-noper-pic-1.png';
@@ -13,19 +14,22 @@ export default class Noper extends React.Component {
         this.state = {
                 offsetY: 0
             };
-        Wheel.add( () => {
-                let _offsetY = 0;
-                if ( window.innerWidth > 1024 ) {
-                    const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
-                    const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
-                    if ( _isAbove || _isBelow ) return;
-                    _offsetY = -( window.scrollY - this.state.sectionElement.offsetTop );
-                }
-                this.setState({
-                        offsetY1: `${ _offsetY / 0.6 + 110 }px`,
-                        offsetY2: `${ _offsetY / 0.7 + 65 }px`,
-                    });
-            } );
+        Hash.add( () => _onChanged.apply(this) );
+        Wheel.add( () => _onChanged.apply(this) );
+
+        function _onChanged() {
+            let _offsetY = 0;
+            if ( window.innerWidth > 1024 ) {
+                const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
+                const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
+                if ( _isAbove || _isBelow ) return;
+                _offsetY = -( window.scrollY - this.state.sectionElement.offsetTop );
+            }
+            this.setState({
+                    offsetY1: `${ _offsetY / 0.6 + 110 }px`,
+                    offsetY2: `${ _offsetY / 0.7 + 65 }px`,
+                });
+        }
 
     }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Hash from './../factory/Hash';
 import Wheel from './../factory/Wheel';
 import Svg from './../factory/Svg';
 import iconGithub from './../image/nav-github-icon.svg';
@@ -15,16 +16,19 @@ export default class Navigator extends React.Component {
                 isNavmode: false,
                 isBottom: false
             };
-        Wheel.add( () => {
-                const _isNavmode = ( window.innerWidth > 1023 ) ? ( window.scrollY > 300 ) : ( window.scrollY > 20 ) ;
-                if ( this.state.isNavmode !== _isNavmode ) this.setState({
-                        isNavmode: _isNavmode
-                    });
-                const _isBottom = ( ( window.scrollY + window.innerHeight ) > this.state.footerElement.offsetTop );
-                if ( this.state.isBottom !== _isBottom ) this.setState({
-                        isBottom: _isBottom
-                    });
-            } );
+        Hash.add( () => _onChanged.apply(this) );
+        Wheel.add( () => _onChanged.apply(this) );
+
+        function _onChanged() {
+            const _isNavmode = ( window.innerWidth > 1023 ) ? ( window.scrollY > 300 ) : ( window.scrollY > 20 ) ;
+            if ( this.state.isNavmode !== _isNavmode ) this.setState({
+                    isNavmode: _isNavmode
+                });
+            const _isBottom = ( ( window.scrollY + window.innerHeight ) > this.state.footerElement.offsetTop );
+            if ( this.state.isBottom !== _isBottom ) this.setState({
+                    isBottom: _isBottom
+                });
+        }
 
     }
 
@@ -46,9 +50,9 @@ export default class Navigator extends React.Component {
                 <div id="Navigator" className={`${ this.state.isNavmode ? "navmode" : "" } ${ this.state.isBottom ? "isbottom" : "" }`}>
                     <nav>
                         <a href="/#/">Hello</a>
-                        <a href="/#/Work">Work</a>
-                        <a href="/#/Projects">Projects</a>
-                        <a href="/#/About">About</a>
+                        <a href="/#/work">Work</a>
+                        <a href="/#/projects">Projects</a>
+                        <a href="/#/about">About</a>
                     </nav>
                     <p>
                         <a className="iconGithub" href="https://github.com/Wildtyto" target="_blank" rel="noopener noreferrer">

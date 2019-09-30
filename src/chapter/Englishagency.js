@@ -1,4 +1,5 @@
 import React from 'react';
+import Hash from './../factory/Hash';
 import Wheel from './../factory/Wheel';
 import englishagencyLogo from './work-englishagency-logo.png';
 import englishagencyPicture1 from './work-englishagency-pic-1.png';
@@ -13,23 +14,27 @@ export default class Englishagency extends React.Component {
         this.state = {
                 offsetY: 0
             };
-        Wheel.add( () => {
-                let _offsetY = 0;
-                let _offsetY1 = 100;
-                let _offsetY2 = 70;
-                if ( window.innerWidth > 1024 ) {
-                    const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
-                    const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
-                    if ( _isAbove || _isBelow ) return;
-                    _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
-                    _offsetY1 = _offsetY / 0.6 + 300 ;
-                    _offsetY2 = _offsetY / 0.7 + 230 ;
-                }
-                this.setState({
-                        offsetY1: _offsetY1,
-                        offsetY2: _offsetY2,
-                    });
-            } );
+        _onChanged.bind(this);
+        Hash.add( () => _onChanged.apply(this) );
+        Wheel.add( () => _onChanged.apply(this) );
+
+        function _onChanged() {
+            let _offsetY = 0;
+            let _offsetY1 = 100;
+            let _offsetY2 = 70;
+            if ( window.innerWidth > 1024 ) {
+                const _isAbove = window.scrollY < ( this.state.sectionElement.offsetTop - window.innerHeight ) ;
+                const _isBelow = window.scrollY > ( this.state.sectionElement.offsetTop + this.state.sectionElement.clientHeight) ;
+                if ( _isAbove || _isBelow ) return;
+                _offsetY =  -( window.scrollY - this.state.sectionElement.offsetTop );
+                _offsetY1 = _offsetY / 0.6 + 300 ;
+                _offsetY2 = _offsetY / 0.7 + 230 ;
+            }
+            this.setState({
+                    offsetY1: _offsetY1,
+                    offsetY2: _offsetY2,
+                });
+        }
 
     }
 

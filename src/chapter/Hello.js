@@ -44,23 +44,22 @@ export default class Hello extends React.Component {
 
     render() {
 
-                    // <div className="hello-shortcuts" style={ { marginTop: `${ this.state.offsetY }px` } }>
         return (
                 <section id="Hello">
                     <div className="hello-shortcuts">
-                        <div className="hello-noper hello-shortcut-item" style={ { backgroundImage: `url(${ helloNoper })` } }>
+                        <a className="hello-noper hello-shortcut-item" href="/#/noper" style={ { backgroundImage: `url(${ helloNoper })` } }>
                             <h5>The Recently Work</h5>
                             <h4>noper</h4>
-                        </div>
-                        <div className="hello-about hello-shortcut-item" style={ { backgroundImage: `url(${ helloCody })` } }>
+                        </a>
+                        <a className="hello-about hello-shortcut-item" href="/#/about" style={ { backgroundImage: `url(${ helloCody })` } }>
                             <h4>About</h4>
-                        </div>
-                        <div className="hello-work hello-shortcut-item" style={ { backgroundImage: `url(${ helloWork })` } }>
+                        </a>
+                        <a className="hello-work hello-shortcut-item" href="/#/work" style={ { backgroundImage: `url(${ helloWork })` } }>
                             <h4>Work</h4>
-                        </div>
-                        <div className="hello-projects hello-shortcut-item" style={ { backgroundImage: `url(${ helloProject })` } }>
+                        </a>
+                        <a className="hello-projects hello-shortcut-item" href="/#/projects" style={ { backgroundImage: `url(${ helloProject })` } }>
                             <h4>Projects</h4>
-                        </div>
+                        </a>
                     </div>
                 </section>
             );
