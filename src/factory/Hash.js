@@ -1,3 +1,5 @@
+import Wheel from './Wheel';
+
 export default class Hash {
 
     static init() {
@@ -8,6 +10,17 @@ export default class Hash {
         this._inspectList();
         window.addEventListener("hashchange", _inspectHash, false);
         this.isInitial = true;
+
+        Wheel.add( () => {
+                const _sectionWork = document.getElementById("Work");
+                const _sectionProjects = document.getElementById("Projects");
+                const _sectionAbout = document.getElementById("About");
+                const _scrollY = window.scrollY;
+                if ( _scrollY >= _sectionAbout.offsetTop ) document.location = "/#/about";
+                else if ( _scrollY >= _sectionProjects.offsetTop ) document.location = "/#/projects";
+                else if ( _scrollY >= _sectionWork.offsetTop ) document.location = "/#/work";
+                else document.location.replace("/#/");
+            } );
 
         function _inspectHash() {
             let _hashText = document.location.hash.replace(/^#\//, "").toLowerCase();

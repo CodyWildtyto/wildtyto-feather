@@ -64,8 +64,8 @@ export default class Noper extends React.Component {
                         </div>
                         <div className="work-explain">
                             <p>We created a chat bot -- noper for focusing on main tasks in business conversation at messaging tools like LINE, or Facebook Messager.</p>
-                            <p>Team manager can assign mission to members. Bot will notify each one who is assigned to. Also the manager will be notified when the work's state is changed or complated.</p>
-                            <p>Two partners and I process the product. I am in charge of bot and web app development, and design of user interface. In concert with back end developer for API in GraphQL.</p>
+                            <p>Team manager could assign mission to members. Bot would notify each one who was assigned to. Also the manager would be notified when the work's state was changed or completed.</p>
+                            <p>Two partners and I processed the product. I was in charge of bot and web app development, and designed of user interface. In concert with back end developer for API in GraphQL.</p>
                         </div>
                         <a href="https://www.noper.in" target="_blank" rel="noopener noreferrer">DEMO</a>
                     </div>

@@ -10,7 +10,7 @@ export default class Projects extends React.Component {
         return (
                 <section id="Projects">
                     <h2>Projects</h2>
-                    <p>That is exciting to design plugins and tools. I usually have some new idea when I develop the products. It will be more and more. Here are two public project I pushed on repositories.</p>
+                    <p>That is exciting to design plugins and tools. I usually have idea when I developed the products. It will be more and more. Here are two public project I pushed on repositories.</p>
                     <div className="projects-container">
                         <div className="projects-project-item projects-project-1">
                             <img src={ projectsIcon1 } alt="projects-icon-1" style={ { height: 100 } } />
