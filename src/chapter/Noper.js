@@ -59,6 +59,7 @@ export default class Noper extends React.Component {
                             <span>Git</span>
                             <span>Google Analytics</span>
                             <span>Express</span>
+                            <span>WebSocket</span>
                             <span>PM2</span>
                             <span>Axios</span>
                         </div>

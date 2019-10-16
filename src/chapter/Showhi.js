@@ -9,7 +9,7 @@ export default class Showhi extends React.Component {
     constructor(_props) {
 
         super(_props);
-        const _defaultOffsetY = 70;
+        const _defaultOffsetY = 160;
         this.state = {
                 offsetY: _defaultOffsetY
             };
