@@ -1,4 +1,3 @@
-import React from 'react';
 import Logo from './chapter/Logo';
 import Boundary from './chapter/Boundary';
 import Navigator from './chapter/Navigator';
@@ -13,25 +12,23 @@ import About from './chapter/About';
 import Contact from './chapter/Contact';
 import './App.css';
 
-export default class App extends React.Component {
+const App = () => {
+  return (
+    <article id="App">
+      <Logo></Logo>
+      <Boundary></Boundary>
+      <Navigator></Navigator>
+      <Intro></Intro>
+      <Hello></Hello>
+      <Work></Work>
+      <Noper></Noper>
+      <Englishagency></Englishagency>
+      <Showhi></Showhi>
+      <Projects></Projects>
+      <About></About>
+      <Contact></Contact>
+    </article>
+  );
+};
 
-    render() {
-        return (
-                <article id="App">
-                    <Logo></Logo>
-                    <Boundary></Boundary>
-                    <Navigator></Navigator>
-                    <Intro></Intro>
-                    <Hello></Hello>
-                    <Work></Work>
-                    <Noper></Noper>
-                    <Englishagency></Englishagency>
-                    <Showhi></Showhi>
-                    <Projects></Projects>
-                    <About></About>
-                    <Contact></Contact>
-                </article>
-            );
-    }
-
-}
+export default App;
