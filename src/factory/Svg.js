@@ -2,7 +2,7 @@ export default class Svg {
 
     static exchange(_selector) {
 
-        const _elementWithSVG = document.querySelector(_selector);
+        const _elementWithSVG = document.querySelector(_selector) || {};
         const _url = _elementWithSVG.src || _elementWithSVG.data ;
         _readSVGFile(_url, _onCallback);
 
