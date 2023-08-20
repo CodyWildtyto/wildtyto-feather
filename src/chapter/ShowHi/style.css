@@ -1,4 +1,4 @@
-section#Showhi {
+section#ShowHi {
     display: flex;
     position: relative;
     height: 800px;
@@ -10,7 +10,7 @@ section#Showhi {
     background-position: 45% 50%;
 }
 
-section#Showhi .work-container {
+section#ShowHi .work-container {
     position: absolute;
     top: 230px;
     left: 50%;
@@ -19,7 +19,7 @@ section#Showhi .work-container {
     background-color: #ffffff;
 }
 
-section#Showhi .work-container h2 {
+section#ShowHi .work-container h2 {
     display: flex;
     position: relative;
     padding-left: 28px;
@@ -28,31 +28,31 @@ section#Showhi .work-container h2 {
     font-weight: 200;
 }
 
-section#Showhi .work-container img {
+section#ShowHi .work-container img {
     position: absolute;
     left: 0;
     margin-top: 3px;
 }
 
-section#Showhi .work-specialities span {
+section#ShowHi .work-specialities span {
     background-color: #e04747;
     color: #ffffff;
 }
 
-section#Showhi .work-explain {
+section#ShowHi .work-explain {
     margin-top: 30px;
 }
 
 @media only screen and ( max-width: 1023px ) {
 
-    section#Showhi {
+    section#ShowHi {
         height: 750px;
         background-position: 50% 70%;
         background-size: 350px;
         background-attachment: scroll;
     }
 
-    section#Showhi .work-container {
+    section#ShowHi .work-container {
         top: 260px;
         left: 10px;
         right: 10px;
