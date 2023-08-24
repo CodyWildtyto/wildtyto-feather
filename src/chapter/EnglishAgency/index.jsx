@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import Hash from '../../factory/Hash';
+import * as Hash from '../../utils/hash';
 import Wheel from '../../factory/Wheel';
 
 import './style.css';
@@ -27,7 +27,7 @@ const EnglishAgency = () => {
       const _isBelow =
         window.scrollY >
         sectionElement.current.offsetTop + sectionElement.current.clientHeight;
-        
+
       if (_isAbove || _isBelow) return;
       _offsetY = -(window.scrollY - sectionElement.current.offsetTop);
       _offsetY1 = _offsetY / 0.6 + 300;
