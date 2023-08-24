@@ -7,7 +7,7 @@
     transition: 300ms color;
 }
 
-#Logo.darkmode {
+#Logo.black {
     color: #000;
 }
 
@@ -20,7 +20,7 @@
     transition: 300ms stroke;
 }
 
-#Logo.darkmode > svg path {
+#Logo.black > svg path {
     stroke: #000;
 }
 
@@ -52,7 +52,7 @@
         transform: scale(0.4);
     }
 
-    #Logo.darkmode {
+    #Logo.black {
         position: fixed;
         top: 22px;
     }

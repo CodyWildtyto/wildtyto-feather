@@ -1,22 +1,20 @@
 {
-    "env": {
-        "browser": true,
-        "node": true,
-        "es6": true
-    },
-    "rules": {
-        "no-console": "off",
-        "react/jsx-uses-vars": 2,
-    },
-    "extends": "eslint:recommended",
-    "plugins": [
-        "react"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "no-console": "off",
+    "react/jsx-uses-vars": 2
+  },
+  "extends": ["eslint:recommended", "react-app"],
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
+  }
 }

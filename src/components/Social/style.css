@@ -1,0 +1,49 @@
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#Navigator .social {
+    position: fixed;
+    bottom: 70px;
+    left: 140px;
+    flex-direction: row;
+    animation: nav-items-visible 300ms;
+    visibility: initial;
+    opacity: 1;
+}
+
+#Navigator.isbottom .social {
+    visibility: hidden;
+    animation: nav-items-hidden 300ms;
+    opacity: 0;
+}
+
+.social a + a {
+    margin-left: 10px;
+}
+
+.social a {
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+}
+
+.social a svg path {
+    fill: #dddddd;
+    transition: 300ms fill;
+}
+
+#Navigator .social a svg path {
+    fill: #aaaaaa;
+    transition: 300ms fill;
+}
+
+.social a:hover svg path {
+    fill: #ffffff;
+}
+
+#Navigator .social a:hover svg path {
+    fill: #777777;
+}

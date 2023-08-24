@@ -7,22 +7,22 @@ import logo from './logo-light.svg';
 import './style.css';
 
 const Logo = () => {
-  const [isDarkmode, setIsDarkmode] = useState(false);
+  const [isBlack, setIsBlack] = useState(false);
+
+  const onWheel = () => {
+    setIsBlack(
+      window.innerWidth > 1023 ? window.scrollY > 500 : window.scrollY > 20
+    );
+  };
 
   useEffect(() => {
     Svg.exchange('#Logo img');
-    setIsDarkmode(window.scrollY > 500);
-
-    Wheel.add(() => {
-      const _isDarkmode =
-        window.innerWidth > 1023 ? window.scrollY > 500 : window.scrollY > 20;
-      if (isDarkmode === _isDarkmode) return;
-      setIsDarkmode(_isDarkmode);
-    });
+    onWheel();
+    Wheel.add(onWheel);
   }, []);
 
   return (
-    <nav id="Logo" className={`${isDarkmode ? 'darkmode' : ''}`}>
+    <nav id="Logo" className={`${isBlack ? 'black' : ''}`}>
       <img src={logo} alt="logo" />
       <span>Cody</span>
       <span>Wildtyto</span>

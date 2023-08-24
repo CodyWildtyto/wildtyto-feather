@@ -25,6 +25,7 @@ const Noper = () => {
       const _isBelow =
         window.scrollY >
         sectionElement.current.offsetTop + sectionElement.current.clientHeight;
+        
       if (_isAbove || _isBelow) return;
       _offsetY = -(window.scrollY - sectionElement.current.offsetTop);
     }
@@ -35,9 +36,10 @@ const Noper = () => {
 
   useEffect(() => {
     sectionElement.current = document.getElementById('Noper');
+
     _onChanged();
-    Hash.add(() => _onChanged());
-    Wheel.add(() => _onChanged());
+    Hash.add(_onChanged);
+    Wheel.add(_onChanged);
   }, []);
 
   return (

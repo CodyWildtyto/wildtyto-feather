@@ -20,31 +20,6 @@ footer#Contact h3 {
     color: #777777;
 }
 
-footer#Contact p {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-footer#Contact p a + a {
-    margin-left: 10px;
-}
-
-footer#Contact p a {
-    width: 24px;
-    height: 24px;
-    border-radius: 20px;
-}
-
-footer#Contact p a svg path {
-    fill: #dddddd;
-    transition: 300ms fill;
-}
-
-footer#Contact p a:hover svg path {
-    fill: #ffffff;
-}
-
 @media only screen and ( max-width: 1023px ) {
 
     footer#Contact {

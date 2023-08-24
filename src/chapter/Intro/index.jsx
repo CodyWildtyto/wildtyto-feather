@@ -8,9 +8,7 @@ const Intro = () => {
   const [isFullview, setIsFullview] = useState(false);
 
   Wheel.add(() => {
-    const _isFullview = window.scrollY > 400;
-    if (isFullview === _isFullview) return;
-    setIsFullview(_isFullview);
+    setIsFullview(window.scrollY > 400);
   });
 
   return (

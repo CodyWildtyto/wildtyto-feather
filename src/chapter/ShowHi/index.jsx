@@ -14,14 +14,16 @@ const ShowHi = () => {
   const sectionElement = useRef();
   const [offsetY, setOffsetY] = useState(DEFAULT_OFFSET_Y);
 
-  const onChange = () => {
+  const onWheel = () => {
     let _offsetY = 0;
+
     if (window.innerWidth > 1024) {
       const _isAbove =
         window.scrollY < sectionElement.current.offsetTop - window.innerHeight;
       const _isBelow =
         window.scrollY >
         sectionElement.current.offsetTop + sectionElement.current.clientHeight;
+        
       if (_isAbove || _isBelow) return;
       _offsetY = -(window.scrollY - sectionElement.current.offsetTop);
     }
@@ -30,8 +32,9 @@ const ShowHi = () => {
 
   useEffect(() => {
     sectionElement.current = document.getElementById('ShowHi');
-    onChange();
-    Wheel.add(() => onChange());
+
+    onWheel();
+    Wheel.add(onWheel);
   }, []);
 
   return (

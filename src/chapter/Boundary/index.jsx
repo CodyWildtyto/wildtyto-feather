@@ -7,14 +7,13 @@ import './style.css';
 const Boundary = () => {
   const [isFullview, setIsFullview] = useState(false);
 
-  useEffect(() => {
+  const onWheel = () => {
     setIsFullview(window.scrollY > 300);
+  };
 
-    Wheel.add(() => {
-      const _isFullview = window.scrollY > 300;
-      if (isFullview === _isFullview) return;
-      setIsFullview(_isFullview);
-    });
+  useEffect(() => {
+    onWheel();
+    Wheel.add(onWheel);
   }, []);
 
   return (

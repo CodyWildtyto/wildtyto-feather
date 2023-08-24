@@ -46,42 +46,6 @@
     margin-left: 6px;
 }
 
-#Navigator p {
-    display: flex;
-    position: fixed;
-    bottom: 70px;
-    left: 140px;
-    flex-direction: row;
-    animation: nav-items-visible 300ms;
-    visibility: initial;
-    opacity: 1;
-}
-
-#Navigator.isbottom p {
-    visibility: hidden;
-    animation: nav-items-hidden 300ms;
-    opacity: 0;
-}
-
-#Navigator p a {
-    width: 24px;
-    height: 24px;
-    border-radius: 20px;
-}
-
-#Navigator p a + a {
-    margin-left: 10px;
-}
-
-#Navigator p a svg path {
-    fill: #aaaaaa;
-    transition: 300ms fill;
-}
-
-#Navigator p a:hover svg path {
-    fill: #777777;
-}
-
 @keyframes nav-items-visible {
     from {
         visibility: hidden;
@@ -101,12 +65,6 @@
     to {
         visibility: hidden;
         opacity: 0;
-    }
-}
-
-@media only screen and ( max-width: 1600px ) {
-
-    #Navigator {
     }
 }
 

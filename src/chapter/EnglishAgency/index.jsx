@@ -20,12 +20,14 @@ const EnglishAgency = () => {
     let _offsetY = 0;
     let _offsetY1 = 100;
     let _offsetY2 = 70;
+
     if (window.innerWidth > 1024) {
       const _isAbove =
         window.scrollY < sectionElement.current.offsetTop - window.innerHeight;
       const _isBelow =
         window.scrollY >
         sectionElement.current.offsetTop + sectionElement.current.clientHeight;
+        
       if (_isAbove || _isBelow) return;
       _offsetY = -(window.scrollY - sectionElement.current.offsetTop);
       _offsetY1 = _offsetY / 0.6 + 300;
@@ -37,9 +39,10 @@ const EnglishAgency = () => {
 
   useEffect(() => {
     sectionElement.current = document.getElementById('EnglishAgency');
+
     _onChanged();
-    Hash.add(() => _onChanged());
-    Wheel.add(() => _onChanged());
+    Hash.add(_onChanged);
+    Wheel.add(_onChanged);
   }, []);
 
   return (

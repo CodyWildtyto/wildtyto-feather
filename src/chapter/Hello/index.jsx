@@ -1,7 +1,3 @@
-import { useEffect } from 'react';
-
-import Wheel from './../../factory/Wheel';
-
 import './style.css';
 
 const IMAGE_PATH = {
@@ -12,25 +8,6 @@ const IMAGE_PATH = {
 };
 
 const Hello = () => {
-  //   const sectionElement = document.querySelector('#Hello .hello-shortcuts');
-  //   const [offsetY, setOffsetY] = useState(0);
-
-  //   const getOffsetY = () => {
-  //     const _element =
-  //       sectionElement || document.querySelector('#Hello .hello-shortcuts');
-  //     const _marginTop = _element.style.marginTop.replace('px', '');
-  //     setOffsetY((window.scrollY - _marginTop) / 5 + 150);
-  //   };
-
-  useEffect(() => {
-    Wheel.add(() => {
-      // const _isAbove = window.scrollY < ( sectionElement.offsetTop - window.innerHeight ) ;
-      // const _isBelow = window.scrollY > ( sectionElement.offsetTop + sectionElement.clientHeight) ;
-      // if ( _isAbove || _isBelow ) return;
-      // getOffsetY();
-    });
-  }, []);
-
   return (
     <section id="Hello">
       <div className="hello-shortcuts">

@@ -1,16 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
+import Social from '../../components/Social';
 import Hash from './../../factory/Hash';
 import Wheel from './../../factory/Wheel';
 import Svg from './../../factory/Svg';
 
 import './style.css';
-
-const IMAGE_PATH = {
-  GITHUB: '/assets/nav-github-icon.svg',
-  LINKEDIN: '/assets/nav-linkedin-icon.svg',
-  MAIL: '/assets/nav-mail-icon.svg',
-};
 
 const Navigator = () => {
   const footerElement = useRef();
@@ -32,11 +27,9 @@ const Navigator = () => {
     Svg.exchange('#Navigator .iconGithub img');
     Svg.exchange('#Navigator .iconLinkedin img');
     Svg.exchange('#Navigator .iconMail img');
-    setIsNavmode(window.scrollY > 300);
-
     _onChanged();
-    Hash.add(() => _onChanged());
-    Wheel.add(() => _onChanged());
+    Hash.add(_onChanged);
+    Wheel.add(_onChanged);
   }, []);
 
   return (
@@ -50,27 +43,7 @@ const Navigator = () => {
         <a href="/#/projects">Projects</a>
         <a href="/#/about">About</a>
       </nav>
-      <p>
-        <a
-          className="iconGithub"
-          href="https://github.com/Wildtyto"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={IMAGE_PATH.GITHUB} alt="nav-github-icon" />
-        </a>
-        <a
-          className="iconLinkedin"
-          href="https://www.linkedin.com/in/wildtyto/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={IMAGE_PATH.LINKEDIN} alt="nav-linkedin-icon" />
-        </a>
-        <a className="iconMail" href="mailto:wildtyto@gmail.com">
-          <img src={IMAGE_PATH.MAIL} alt="nav-mail-icon" />
-        </a>
-      </p>
+      <Social />
     </div>
   );
 };
