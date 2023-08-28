@@ -1,4 +1,4 @@
-import Wheel from '../factory/Wheel';
+import * as Wheel from './wheel';
 
 const callbackList = [];
 

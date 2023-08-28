@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import Wheel from '../../factory/Wheel';
+import * as Wheel from '../../utils/wheel';
 
 import './style.css';
 

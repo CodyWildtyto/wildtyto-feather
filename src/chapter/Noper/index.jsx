@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import * as Hash from '../../utils/hash';
-import Wheel from './../../factory/Wheel';
+import * as Wheel from '../../utils/wheel';
 
 import './style.css';
 
