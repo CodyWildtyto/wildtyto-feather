@@ -6,8 +6,8 @@ import './style.css';
 
 const DEFAULT_OFFSET_Y = 160;
 const IMAGE_PATH = {
-  LOGO: '/assets/work-showhi-logo.png',
-  PIC: '/assets/work-showhi-pic-1.png',
+  LOGO: '/assets/works-showhi-logo.png',
+  PIC: '/assets/works-showhi-pic-1.png',
 };
 
 const ShowHi = () => {
@@ -45,18 +45,18 @@ const ShowHi = () => {
         backgroundPositionY: offsetY,
       }}
     >
-      <div className="work-container">
+      <div className="works-container">
         <h2>
           <img src={IMAGE_PATH.LOGO} alt="showhi-logo" style={{ height: 24 }} />
           <span>ShowHi</span>
         </h2>
-        <div className="work-specialities">
+        <div className="works-specialities">
           <span>JavaScript</span>
           <span>AngularJS</span>
           <span>Git</span>
           <span>XMLHttpRequest</span>
         </div>
-        <div className="work-explain">
+        <div className="works-explain">
           <p>
             There was a social network for students who would like to study
             abroad and school recruiters who help students applying the

@@ -6,9 +6,9 @@ import * as Wheel from '../../utils/wheel';
 import './style.css';
 
 const IMAGE_PATH = {
-  LOGO: '/assets/work-noper-logo.png',
-  PIC_1: '/assets/work-noper-pic-1.png',
-  PIC_2: '/assets/work-noper-pic-2.png',
+  LOGO: '/assets/works-noper-logo.png',
+  PIC_1: '/assets/works-noper-pic-1.png',
+  PIC_2: '/assets/works-noper-pic-2.png',
 };
 
 const Noper = () => {
@@ -50,12 +50,12 @@ const Noper = () => {
         backgroundPositionY: `${offsetY1}, ${offsetY2}`,
       }}
     >
-      <div className="work-container">
+      <div className="works-container">
         <h2>
           <img src={IMAGE_PATH.LOGO} alt="noper-logo" style={{ height: 30 }} />
           <span>noper</span>
         </h2>
-        <div className="work-specialities">
+        <div className="works-specialities">
           <span>JavaScript</span>
           <span>Webpack</span>
           <span>LINE Bot SDK</span>
@@ -68,7 +68,7 @@ const Noper = () => {
           <span>PM2</span>
           <span>Axios</span>
         </div>
-        <div className="work-explain">
+        <div className="works-explain">
           <p>
             We created a chat bot -- noper for focusing on main tasks in
             business conversation at messaging tools like LINE, or Facebook
@@ -77,7 +77,7 @@ const Noper = () => {
           <p>
             Team manager could assign mission to members. Bot would notify each
             one who was assigned to. Also the manager would be notified when the
-            work's state was changed or completed.
+            works' state was changed or completed.
           </p>
           <p>
             Two partners and I processed the product. I was in charge of bot and

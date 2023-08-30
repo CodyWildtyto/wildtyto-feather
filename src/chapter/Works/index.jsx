@@ -1,9 +1,9 @@
 import './style.css';
 
-const Work = () => {
+const Works = () => {
   return (
-    <section id="Work">
-      <h2>Work</h2>
+    <section id="Works">
+      <h2>Works</h2>
       <p>
         Experience in various web applications in front end jobs. Most of them
         are built with different features, such as vanilla JavaScript, React,
@@ -13,4 +13,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Works;

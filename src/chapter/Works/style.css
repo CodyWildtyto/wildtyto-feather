@@ -1,26 +1,26 @@
-section#Work {
+section#Works {
     padding: 120px 70px 140px;
     background-color: #f3f3f3;
     text-align: center;
 }
 
-section#Work h2 {
+section#Works h2 {
     margin: 0;
     font-size: 47px;
 }
 
-section#Work p {
+section#Works p {
     margin: auto;
     margin-top: 50px;
     max-width: 600px;
     line-height: 1.3em;
 }
 
-.work-container h2 {
+.works-container h2 {
     margin-top: 0;
 }
 
-.work-container > a {
+.works-container > a {
     position: absolute;
     bottom: -20px;
     display: inline-block;
@@ -33,14 +33,11 @@ section#Work p {
     transition: 300ms background-color;
 }
 
-.work-container > a:hover {
+.works-container > a:hover {
     background-color: #777;
 }
 
-.work-specialities {
-}
-
-.work-specialities span {
+.works-specialities span {
     display: inline-block;
     margin-right: 7px;
     padding: 2px 10px 3px;
@@ -49,22 +46,22 @@ section#Work p {
     line-height: 10px;
 }
 
-.work-explain {
+.works-explain {
     font-size: 14px;
     margin-top: 30px;
 }
 
 @media only screen and ( max-width: 1023px ) {
 
-    section#Work {
+    section#Works {
         padding: 50px 50px 60px;
     }
 
-    section#Work p {
+    section#Works p {
         margin-top: 30px;
     }
 
-    .work-container > a {
+    .works-container > a {
         left: 50%;
         transform: translateX(-50%);
     }

@@ -16,7 +16,7 @@ const Hello = () => {
           href="/#/noper"
           style={{ backgroundImage: `url(${IMAGE_PATH.NOPER})` }}
         >
-          <h5>The Recently Work</h5>
+          <h5>The Recently Works</h5>
           <h4>noper</h4>
         </a>
         <a
@@ -27,11 +27,11 @@ const Hello = () => {
           <h4>About</h4>
         </a>
         <a
-          className="hello-work hello-shortcut-item"
-          href="/#/work"
+          className="hello-works hello-shortcut-item"
+          href="/#/works"
           style={{ backgroundImage: `url(${IMAGE_PATH.WORKS})` }}
         >
-          <h4>Work</h4>
+          <h4>Works</h4>
         </a>
         <a
           className="hello-projects hello-shortcut-item"

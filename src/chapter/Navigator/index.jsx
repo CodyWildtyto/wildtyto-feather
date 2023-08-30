@@ -39,7 +39,7 @@ const Navigator = () => {
     >
       <nav>
         <a href="/#/">Hello</a>
-        <a href="/#/work">Work</a>
+        <a href="/#/works">Works</a>
         <a href="/#/projects">Projects</a>
         <a href="/#/about">About</a>
       </nav>

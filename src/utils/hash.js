@@ -1,3 +1,4 @@
+import { SECTION_NAME } from '../configs/constants';
 import * as Wheel from './wheel';
 
 const callbackList = [];
@@ -25,11 +26,11 @@ const inspectHash = () => {
   let hashText = document.location.hash.replace(/^#\//, '').toLowerCase();
 
   if (isWheeling) return;
-  if (hashText === '') smoothScrollTo('Hello');
-  else if (hashText === 'work') smoothScrollTo('Work');
-  else if (hashText === 'projects') smoothScrollTo('Projects');
-  else if (hashText === 'about') smoothScrollTo('About');
-  else if (hashText === 'noper') smoothScrollTo('Noper');
+  if (hashText === '') smoothScrollTo(SECTION_NAME.HELLO);
+  else if (hashText === 'works') smoothScrollTo(SECTION_NAME.WORKS);
+  else if (hashText === 'projects') smoothScrollTo(SECTION_NAME.PROJECTS);
+  else if (hashText === 'about') smoothScrollTo(SECTION_NAME.ABOUT);
+  else if (hashText === 'noper') smoothScrollTo(SECTION_NAME.NOPER);
 };
 
 const init = () => {
@@ -43,9 +44,9 @@ const init = () => {
   };
 
   Wheel.add(() => {
-    const sectionWorks = document.getElementById('Work');
-    const sectionProjects = document.getElementById('Projects');
-    const sectionAbout = document.getElementById('About');
+    const sectionWorks = document.getElementById(SECTION_NAME.WORKS);
+    const sectionProjects = document.getElementById(SECTION_NAME.PROJECTS);
+    const sectionAbout = document.getElementById(SECTION_NAME.ABOUT);
     const scrollY = window.scrollY;
 
     if (scrollY >= sectionAbout.offsetTop) document.location = '/#/about';

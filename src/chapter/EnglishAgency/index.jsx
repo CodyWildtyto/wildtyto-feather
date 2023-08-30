@@ -6,9 +6,9 @@ import * as Wheel from '../../utils/wheel';
 import './style.css';
 
 const IMAGE_PATH = {
-  LOGO: '/assets/work-englishagency-logo.png',
-  PIC_1: '/assets/work-englishagency-pic-1.png',
-  PIC_2: '/assets/work-englishagency-pic-2.png',
+  LOGO: '/assets/works-englishagency-logo.png',
+  PIC_1: '/assets/works-englishagency-pic-1.png',
+  PIC_2: '/assets/works-englishagency-pic-2.png',
 };
 
 const EnglishAgency = () => {
@@ -53,12 +53,12 @@ const EnglishAgency = () => {
         backgroundPositionY: `${offsetY1}px, ${offsetY2}px`,
       }}
     >
-      <div className="work-container">
+      <div className="works-container">
         <h2>
           <img src={IMAGE_PATH.LOGO} alt="noper-logo" style={{ height: 30 }} />
           <span>English.Agency</span>
         </h2>
-        <div className="work-specialities">
+        <div className="works-specialities">
           <span>JavaScript</span>
           <span>Vue.js</span>
           <span>Vue Server Renderer</span>
@@ -69,7 +69,7 @@ const EnglishAgency = () => {
           <span>PM2</span>
           <span>Request</span>
         </div>
-        <div className="work-explain">
+        <div className="works-explain">
           <p>
             Fortuitously, we had a idea with a partner company. It was a
             publishing platform for the recruiters of English schools to share
