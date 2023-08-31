@@ -1,5 +1,6 @@
 import Hello from '../../components/Hello';
 import Logo from '../../components/Logo';
+import Shortcut from '../../components/Shortcut';
 import './style.css';
 
 const IMAGE_PATH = {
@@ -15,35 +16,31 @@ const Intro = () => {
       <Logo />
       <Hello />
       <div className="intro-shortcuts">
-        <a
-          className="intro-noper intro-shortcut-item"
+        <Shortcut
           href="/#/noper"
-          style={{ backgroundImage: `url(${IMAGE_PATH.NOPER})` }}
-        >
-          <h5>The Recently Works</h5>
-          <h4>noper</h4>
-        </a>
-        <a
-          className="intro-about intro-shortcut-item"
+          imgUrl={IMAGE_PATH.NOPER}
+          name="noper"
+          subtitle="The Recently Works"
+          title="noper"
+        />
+        <Shortcut
           href="/#/about"
-          style={{ backgroundImage: `url(${IMAGE_PATH.CODY})` }}
-        >
-          <h4>About</h4>
-        </a>
-        <a
-          className="intro-works intro-shortcut-item"
+          imgUrl={IMAGE_PATH.CODY}
+          name="about"
+          title="About"
+        />
+        <Shortcut
           href="/#/works"
-          style={{ backgroundImage: `url(${IMAGE_PATH.WORKS})` }}
-        >
-          <h4>Works</h4>
-        </a>
-        <a
-          className="intro-projects intro-shortcut-item"
+          imgUrl={IMAGE_PATH.WORKS}
+          name="works"
+          title="Works"
+        />
+        <Shortcut
           href="/#/projects"
-          style={{ backgroundImage: `url(${IMAGE_PATH.PROJECT})` }}
-        >
-          <h4>Projects</h4>
-        </a>
+          imgUrl={IMAGE_PATH.PROJECT}
+          name="projects"
+          title="Projects"
+        />
       </div>
     </section>
   );

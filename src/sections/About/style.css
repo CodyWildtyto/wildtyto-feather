@@ -1,35 +1,10 @@
 section#About {
     position: relative;
-    padding-top: 250px;
+    padding-top: 60px;
     padding-bottom: 100px;
     min-height: 800px;
     background-color: #f3f3f3;
     text-align: center;
-}
-
-section#About h2 {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 0;
-    font-size: 40px;
-}
-
-section#About h3 {
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    font-weight: 100;
-    font-size: 47px;
-}
-
-section#About h4 {
-    margin: 0;
-    font-weight: 300;
-    font-size: 32px;
 }
 
 section#About .about-profile {

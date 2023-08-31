@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
 import Social from '../../components/Social';
+import Title from '../../components/Title';
 import Svg from './../../factory/Svg';
 
 import './style.css';
@@ -14,7 +15,7 @@ const Contact = () => {
 
   return (
     <footer id="Contact">
-      <h2>Thank You</h2>
+      <Title title="Thank You" />
       <Social />
       <h3>© Wildtyto</h3>
     </footer>

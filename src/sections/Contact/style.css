@@ -8,11 +8,6 @@ footer#Contact {
     flex-direction: column;
 }
 
-footer#Contact h2 {
-    margin-bottom: 80px;
-    font-size: 40px;
-}
-
 footer#Contact h3 {
     margin-top: 150px;
     font-size: 15px;

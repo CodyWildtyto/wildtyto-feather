@@ -4,18 +4,6 @@ section#Works {
     text-align: center;
 }
 
-section#Works h2 {
-    margin: 0;
-    font-size: 47px;
-}
-
-section#Works p {
-    margin: auto;
-    margin-top: 50px;
-    max-width: 600px;
-    line-height: 1.3em;
-}
-
 .works-container h2 {
     margin-top: 0;
 }

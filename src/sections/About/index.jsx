@@ -1,3 +1,5 @@
+import Title from '../../components/Title';
+
 import './style.css';
 
 const IMAGE_PATH = {
@@ -7,8 +9,7 @@ const IMAGE_PATH = {
 const About = () => {
   return (
     <section id="About">
-      <h2>About</h2>
-      <h3>Cody Wildtyto</h3>
+      <Title subtitle="Cody Wildtyto" title="About" />
       <div className="about-profile">
         <div className="about-block">
           <div

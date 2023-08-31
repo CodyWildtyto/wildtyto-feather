@@ -1,3 +1,5 @@
+import Title from '../../components/Title';
+
 import './style.css';
 
 const IMAGE_PATH = {
@@ -8,12 +10,10 @@ const IMAGE_PATH = {
 const Projects = () => {
   return (
     <section id="Projects">
-      <h2>Projects</h2>
-      <p>
-        That is exciting to design plugins and tools. I usually have idea when I
-        developed the products. It will be more and more. Here are two public
-        project I pushed on repositories.
-      </p>
+      <Title
+        description="That is exciting to design plugins and tools. I usually have idea when I developed the products. It will be more and more. Here are two public project I pushed on repositories."
+        title="Projects"
+      />
       <div className="projects-container">
         <div className="projects-project-item projects-project-1">
           <img
