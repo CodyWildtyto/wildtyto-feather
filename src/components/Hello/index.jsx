@@ -4,7 +4,7 @@ import * as Wheel from '../../utils/wheel';
 
 import './style.css';
 
-const Intro = () => {
+const Hello = () => {
   const [isFullview, setIsFullview] = useState(false);
 
   Wheel.add(() => {
@@ -12,7 +12,7 @@ const Intro = () => {
   });
 
   return (
-    <div id="Intro" className={`${isFullview ? 'fullview' : ''}`}>
+    <div id="Hello" className={`${isFullview ? 'fullview' : ''}`}>
       <h2>Hello!</h2>
       <h3>
         <p>I am a</p>
@@ -23,4 +23,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Hello;

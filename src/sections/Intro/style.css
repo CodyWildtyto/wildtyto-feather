@@ -1,11 +1,11 @@
-section#Hello {
+section#Intro {
     display: flex;
     padding-left: 450px;
     height: 750px;
     flex-direction: row;
 }
 
-section#Hello .hello-shortcuts {
+section#Intro .intro-shortcuts {
     display: flex;
     position: relative;
     margin-top: 30px;
@@ -14,7 +14,7 @@ section#Hello .hello-shortcuts {
     width: 100%;
 }
 
-section#Hello .hello-shortcuts::before {
+section#Intro .intro-shortcuts::before {
     position: absolute;
     top: 250px;
     left: -70px;
@@ -23,7 +23,7 @@ section#Hello .hello-shortcuts::before {
     content: "";
 }
 
-section#Hello .hello-shortcut-item {
+section#Intro .intro-shortcut-item {
     position: absolute;
     z-index: 6;
     padding: 40px;
@@ -35,7 +35,7 @@ section#Hello .hello-shortcut-item {
     cursor: pointer;
 }
 
-section#Hello .hello-shortcut-item::before {
+section#Intro .intro-shortcut-item::before {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -48,28 +48,28 @@ section#Hello .hello-shortcut-item::before {
     content: "";
 }
 
-section#Hello .hello-shortcut-item:hover::before {
+section#Intro .intro-shortcut-item:hover::before {
     opacity: 1;
 }
 
-section#Hello .hello-shortcut-item h4,
-section#Hello .hello-shortcut-item h5 {
+section#Intro .intro-shortcut-item h4,
+section#Intro .intro-shortcut-item h5 {
     margin: 0;
 }
 
-section#Hello .hello-shortcut-item h4 {
+section#Intro .intro-shortcut-item h4 {
     font-size: 36px;
     font-weight: 200;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #fff;
 }
 
-section#Hello .hello-shortcut-item h5 {
+section#Intro .intro-shortcut-item h5 {
     font-size: 12px;
     font-weight: 500;
 }
 
-section#Hello .hello-noper {
+section#Intro .intro-noper {
     top: 0;
     left: 0;
     background-position-x: left;
@@ -78,23 +78,23 @@ section#Hello .hello-noper {
     background-color: #73a0e1;
 }
 
-section#Hello .hello-noper h4 {
+section#Intro .intro-noper h4 {
     font-size: 32px;
     font-weight: 200;
 }
 
-section#Hello .hello-noper h5,
-section#Hello .hello-about h4 {
+section#Intro .intro-noper h5,
+section#Intro .intro-about h4 {
     margin-top: 20px;
 }
 
-section#Hello .hello-about {
+section#Intro .intro-about {
     top: 0;
     left: 50%;
     background-position: center;
 }
 
-section#Hello .hello-works {
+section#Intro .intro-works {
     top: 50%;
     left: 0;
     background-position: center left;
@@ -102,18 +102,18 @@ section#Hello .hello-works {
     background-color: #c57165;
 }
 
-section#Hello .hello-projects {
+section#Intro .intro-projects {
     top: 50%;
     left: 50%;
 }
 
 @media only screen and ( max-width: 1360px ) {
 
-    section#Hello {
+    section#Intro {
         height: 600px;
     }
 
-    section#Hello .hello-shortcut-item {
+    section#Intro .intro-shortcut-item {
         padding: 30px;
     }
 
@@ -121,13 +121,13 @@ section#Hello .hello-projects {
 
 @media only screen and ( max-width: 1023px ) {
 
-    section#Hello {
+    section#Intro {
         position: relative;
         padding-left: 0;
         height: 550px;
     }
 
-    section#Hello .hello-shortcuts {
+    section#Intro .intro-shortcuts {
         display: initial;
         position: absolute;
         bottom: 0;
@@ -140,7 +140,7 @@ section#Hello .hello-projects {
         vertical-align: top;
     }
 
-    section#Hello .hello-shortcut-item {
+    section#Intro .intro-shortcut-item {
         display: inline-block;
         position: relative;
         left: auto;
@@ -150,18 +150,18 @@ section#Hello .hello-projects {
         vertical-align: top;
     }
 
-    section#Hello .hello-shortcut-item + .hello-shortcut-item {
+    section#Intro .intro-shortcut-item + .intro-shortcut-item {
         margin-left: 30px;
     }
 
-    section#Hello .hello-shortcut-item h4 {
+    section#Intro .intro-shortcut-item h4 {
         position: absolute;
         bottom: -25px;
         left: 0;
         font-size: 20px;
     }
 
-    section#Hello .hello-shortcut-item h5 {
+    section#Intro .intro-shortcut-item h5 {
         position: absolute;
         bottom: -15px;
         left: 0;
@@ -170,7 +170,7 @@ section#Hello .hello-projects {
         color: #ffffff
     }
 
-    section#Hello .hello-noper h4 {
+    section#Intro .intro-noper h4 {
         bottom: -30px;
     }
 

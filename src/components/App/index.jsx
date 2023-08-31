@@ -1,33 +1,28 @@
-import Logo from '../../chapter/Logo';
-import Boundary from '../../chapter/Boundary';
-import Navigator from '../../chapter/Navigator';
-import Intro from '../../chapter/Intro';
-import Hello from '../../chapter/Hello';
-import Works from '../../chapter/Works';
-import Noper from '../../chapter/Noper';
-import EnglishAgency from '../../chapter/EnglishAgency';
-import ShowHi from '../../chapter/ShowHi';
-import Projects from '../../chapter/Projects';
-import About from '../../chapter/About';
-import Contact from '../../chapter/Contact';
+import Boundary from '../../layouts/Boundary';
+import Intro from '../../sections/Intro';
+import Works from '../../sections/Works';
+import Noper from '../../sections/Noper';
+import EnglishAgency from '../../sections/EnglishAgency';
+import ShowHi from '../../sections/ShowHi';
+import Projects from '../../sections/Projects';
+import About from '../../sections/About';
+import Contact from '../../sections/Contact';
 
 import './style.css';
 
 const App = () => {
   return (
     <article id="App">
-      <Logo></Logo>
-      <Boundary></Boundary>
-      <Navigator></Navigator>
-      <Intro></Intro>
-      <Hello></Hello>
-      <Works />
-      <Noper></Noper>
-      <EnglishAgency></EnglishAgency>
-      <ShowHi></ShowHi>
-      <Projects></Projects>
-      <About></About>
-      <Contact></Contact>
+      <Boundary>
+        <Intro />
+        <Works />
+        <Noper />
+        <EnglishAgency />
+        <ShowHi />
+        <Projects />
+        <About />
+        <Contact />
+      </Boundary>
     </article>
   );
 };

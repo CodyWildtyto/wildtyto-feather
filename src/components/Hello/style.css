@@ -1,4 +1,4 @@
-#Intro {
+#Hello {
     display: flex;
     position: fixed;
     top: 0;
@@ -9,7 +9,7 @@
     background-color: #e04747;
 }
 
-#Intro h2 {
+#Hello h2 {
     position: absolute;
     top: 270px;
     left: 15%;
@@ -17,7 +17,7 @@
     font-weight: 200;
 }
 
-#Intro h3 {
+#Hello h3 {
     position: absolute;
     top: 390px;
     left: 15%;
@@ -26,17 +26,17 @@
     color: #ffffff;
 }
 
-#Intro h3 p {
+#Hello h3 p {
     margin: 0;
 }
 
 @media only screen and ( max-width: 1360px ) {
 
-    #Intro h2 {
+    #Hello h2 {
         top: 230px;
     }
 
-    #Intro h3 {
+    #Hello h3 {
         top: 350px;
     }
 
@@ -44,15 +44,15 @@
 
 @media only screen and ( max-width: 1023px ) {
 
-    #Intro {
+    #Hello {
         position: absolute;
     }
 
-    #Intro h2 {
+    #Hello h2 {
         top: 80px;
     }
 
-    #Intro h3 {
+    #Hello h3 {
         top: 170px;
     }
 

@@ -1,18 +1,22 @@
+import Hello from '../../components/Hello';
+import Logo from '../../components/Logo';
 import './style.css';
 
 const IMAGE_PATH = {
-  CODY: '/assets/hello-cody.png',
-  NOPER: '/assets/hello-noper.png',
-  PROJECT: '/assets/hello-project.png',
-  WORKS: '/assets/hello-works.png',
+  CODY: '/assets/intro-cody.png',
+  NOPER: '/assets/intro-noper.png',
+  PROJECT: '/assets/intro-project.png',
+  WORKS: '/assets/intro-works.png',
 };
 
-const Hello = () => {
+const Intro = () => {
   return (
-    <section id="Hello">
-      <div className="hello-shortcuts">
+    <section id="Intro">
+      <Logo />
+      <Hello />
+      <div className="intro-shortcuts">
         <a
-          className="hello-noper hello-shortcut-item"
+          className="intro-noper intro-shortcut-item"
           href="/#/noper"
           style={{ backgroundImage: `url(${IMAGE_PATH.NOPER})` }}
         >
@@ -20,21 +24,21 @@ const Hello = () => {
           <h4>noper</h4>
         </a>
         <a
-          className="hello-about hello-shortcut-item"
+          className="intro-about intro-shortcut-item"
           href="/#/about"
           style={{ backgroundImage: `url(${IMAGE_PATH.CODY})` }}
         >
           <h4>About</h4>
         </a>
         <a
-          className="hello-works hello-shortcut-item"
+          className="intro-works intro-shortcut-item"
           href="/#/works"
           style={{ backgroundImage: `url(${IMAGE_PATH.WORKS})` }}
         >
           <h4>Works</h4>
         </a>
         <a
-          className="hello-projects hello-shortcut-item"
+          className="intro-projects intro-shortcut-item"
           href="/#/projects"
           style={{ backgroundImage: `url(${IMAGE_PATH.PROJECT})` }}
         >
@@ -45,4 +49,4 @@ const Hello = () => {
   );
 };
 
-export default Hello;
+export default Intro;
