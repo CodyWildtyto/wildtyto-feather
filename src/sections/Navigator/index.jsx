@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
 import Social from '../../components/Social';
-import * as Hash from '../../utils/hash';
 import * as Wheel from '../../utils/wheel';
 import Svg from './../../factory/Svg';
 
@@ -28,7 +27,6 @@ const Navigator = () => {
     Svg.exchange('#Navigator .iconLinkedin img');
     Svg.exchange('#Navigator .iconMail img');
     _onChanged();
-    Hash.add(_onChanged);
     Wheel.add(_onChanged);
   }, []);
 

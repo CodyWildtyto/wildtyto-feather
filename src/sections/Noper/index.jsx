@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 
-import * as Hash from '../../utils/hash';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';
@@ -38,7 +37,6 @@ const Noper = () => {
     sectionElement.current = document.getElementById('Noper');
 
     _onChanged();
-    Hash.add(_onChanged);
     Wheel.add(_onChanged);
   }, []);
 

@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 
-import * as Hash from '../../utils/hash';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';
@@ -41,7 +40,6 @@ const EnglishAgency = () => {
     sectionElement.current = document.getElementById('EnglishAgency');
 
     _onChanged();
-    Hash.add(_onChanged);
     Wheel.add(_onChanged);
   }, []);
 
