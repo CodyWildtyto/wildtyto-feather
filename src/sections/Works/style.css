@@ -4,54 +4,10 @@ section#Works {
     text-align: center;
 }
 
-.works-container h2 {
-    margin-top: 0;
-}
-
-.works-container > a {
-    position: absolute;
-    bottom: -20px;
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 36px 12px;
-    font-size: 14px;
-    background-color: #333;
-    color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: 300ms background-color;
-}
-
-.works-container > a:hover {
-    background-color: #777;
-}
-
-.works-specialities span {
-    display: inline-block;
-    margin-right: 7px;
-    padding: 2px 10px 3px;
-    border-radius: 10px;
-    font-size: 10px;
-    line-height: 10px;
-}
-
-.works-explain {
-    font-size: 14px;
-    margin-top: 30px;
-}
-
 @media only screen and ( max-width: 1023px ) {
 
     section#Works {
         padding: 50px 50px 60px;
-    }
-
-    section#Works p {
-        margin-top: 30px;
-    }
-
-    .works-container > a {
-        left: 50%;
-        transform: translateX(-50%);
     }
 
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
+import Card from '../../components/Card';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';
@@ -48,49 +49,42 @@ const Noper = () => {
         backgroundPositionY: `${offsetY1}, ${offsetY2}`,
       }}
     >
-      <div className="works-container">
-        <h2>
-          <img src={IMAGE_PATH.LOGO} alt="noper-logo" style={{ height: 30 }} />
-          <span>noper</span>
-        </h2>
-        <div className="works-specialities">
-          <span>JavaScript</span>
-          <span>Webpack</span>
-          <span>LINE Bot SDK</span>
-          <span>React</span>
-          <span>NPM</span>
-          <span>Git</span>
-          <span>Google Analytics</span>
-          <span>Express</span>
-          <span>WebSocket</span>
-          <span>PM2</span>
-          <span>Axios</span>
-        </div>
-        <div className="works-explain">
-          <p>
-            We created a chat bot -- noper for focusing on main tasks in
-            business conversation at messaging tools like LINE, or Facebook
-            Messager.
-          </p>
-          <p>
-            Team manager could assign mission to members. Bot would notify each
-            one who was assigned to. Also the manager would be notified when the
-            works' state was changed or completed.
-          </p>
-          <p>
-            Two partners and I processed the product. I was in charge of bot and
-            web app development, and designed of user interface. In concert with
-            back end developer for API in GraphQL.
-          </p>
-        </div>
-        <a
-          href="https://www.noper.in"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          DEMO
-        </a>
-      </div>
+      <Card
+        icon={IMAGE_PATH.LOGO}
+        iconAlt="noper-logo"
+        iconHeight={30}
+        link="https://www.noper.in"
+        organColor="#009ecc"
+        organs={[
+          'JavaScript',
+          'Webpack',
+          'LINE Bot SDK',
+          'React',
+          'NPM',
+          'Git',
+          'Google Analytics',
+          'Express',
+          'WebSocket',
+          'PM2',
+          'Axios',
+        ]}
+        title="noper"
+      >
+        <p>
+          We created a chat bot -- noper for focusing on main tasks in business
+          conversation at messaging tools like LINE, or Facebook Messager.
+        </p>
+        <p>
+          Team manager could assign mission to members. Bot would notify each
+          one who was assigned to. Also the manager would be notified when the
+          works' state was changed or completed.
+        </p>
+        <p>
+          Two partners and I processed the product. I was in charge of bot and
+          web app development, and designed of user interface. In concert with
+          back end developer for API in GraphQL.
+        </p>
+      </Card>
     </section>
   );
 };

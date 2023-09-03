@@ -10,32 +10,10 @@ section#EnglishAgency {
     background-position: 93% 50%, 93% 50%;
 }
 
-section#EnglishAgency .works-container {
-    position: absolute;
+section#EnglishAgency .card {
     top: 180px;
     width: 40%;
     right: 50%;
-    padding: 30px;
-    background-color: #fff;
-}
-
-section#EnglishAgency .works-container h2 {
-    display: flex;
-    position: relative;
-    padding-left: 42px;
-    line-height: 30px;
-    font-size: 30px;
-    font-weight: 200;
-}
-
-section#EnglishAgency .works-container img {
-    position: absolute;
-    left: 0;
-}
-
-section#EnglishAgency .works-specialities span {
-    background-color: #3f3f3f;
-    color: #ffffff;
 }
 
 @media only screen and ( max-width: 1023px ) {
@@ -47,11 +25,10 @@ section#EnglishAgency .works-specialities span {
         background-attachment: scroll;
     }
 
-    section#EnglishAgency .works-container {
+    section#EnglishAgency .card {
         top: 240px;
         left: 10px;
         right: 10px;
         width: auto;
     }
-
 }

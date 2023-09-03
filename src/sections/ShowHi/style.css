@@ -10,37 +10,18 @@ section#ShowHi {
     background-position: 45% 50%;
 }
 
-section#ShowHi .works-container {
-    position: absolute;
+section#ShowHi .card {
     top: 230px;
     left: 50%;
     right: 10%;
-    padding: 30px;
-    background-color: #ffffff;
 }
 
-section#ShowHi .works-container h2 {
-    display: flex;
-    position: relative;
+section#ShowHi .card h2 {
     padding-left: 28px;
-    line-height: 30px;
-    font-size: 30px;
-    font-weight: 200;
 }
 
-section#ShowHi .works-container img {
-    position: absolute;
-    left: 0;
+section#ShowHi .card img {
     margin-top: 3px;
-}
-
-section#ShowHi .works-specialities span {
-    background-color: #e04747;
-    color: #ffffff;
-}
-
-section#ShowHi .works-explain {
-    margin-top: 30px;
 }
 
 @media only screen and ( max-width: 1023px ) {
@@ -52,7 +33,7 @@ section#ShowHi .works-explain {
         background-attachment: scroll;
     }
 
-    section#ShowHi .works-container {
+    section#ShowHi .card {
         top: 260px;
         left: 10px;
         right: 10px;

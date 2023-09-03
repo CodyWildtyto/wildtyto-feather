@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
+import Card from '../../components/Card';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';
@@ -23,7 +24,7 @@ const ShowHi = () => {
       const _isBelow =
         window.scrollY >
         sectionElement.current.offsetTop + sectionElement.current.clientHeight;
-        
+
       if (_isAbove || _isBelow) return;
       _offsetY = -(window.scrollY - sectionElement.current.offsetTop);
     }
@@ -45,35 +46,29 @@ const ShowHi = () => {
         backgroundPositionY: offsetY,
       }}
     >
-      <div className="works-container">
-        <h2>
-          <img src={IMAGE_PATH.LOGO} alt="showhi-logo" style={{ height: 24 }} />
-          <span>ShowHi</span>
-        </h2>
-        <div className="works-specialities">
-          <span>JavaScript</span>
-          <span>AngularJS</span>
-          <span>Git</span>
-          <span>XMLHttpRequest</span>
-        </div>
-        <div className="works-explain">
-          <p>
-            There was a social network for students who would like to study
-            abroad and school recruiters who help students applying the
-            university.
-          </p>
-          <p>
-            School pages could be managed by the school recruiters. Students
-            were able to contact and apply the university school directly. Also
-            it was easy to send documents to each other in messaging system.
-          </p>
-          <p>
-            I must designed a flexible web application system for appending
-            different kind of tool like messaging, video communication plugin
-            and file service.
-          </p>
-        </div>
-      </div>
+      <Card
+        icon={IMAGE_PATH.LOGO}
+        iconAlt="showhi-logo"
+        iconHeight={24}
+        organColor="#e04747"
+        organs={['JavaScript', 'AngularJS', 'Git', 'XMLHttpRequest']}
+        title="ShowHi"
+      >
+        <p>
+          There was a social network for students who would like to study abroad
+          and school recruiters who help students applying the university.
+        </p>
+        <p>
+          School pages could be managed by the school recruiters. Students were
+          able to contact and apply the university school directly. Also it was
+          easy to send documents to each other in messaging system.
+        </p>
+        <p>
+          I must designed a flexible web application system for appending
+          different kind of tool like messaging, video communication plugin and
+          file service.
+        </p>
+      </Card>
     </section>
   );
 };

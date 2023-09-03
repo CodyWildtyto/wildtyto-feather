@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
+import Card from '../../components/Card';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';
@@ -51,47 +52,40 @@ const EnglishAgency = () => {
         backgroundPositionY: `${offsetY1}px, ${offsetY2}px`,
       }}
     >
-      <div className="works-container">
-        <h2>
-          <img src={IMAGE_PATH.LOGO} alt="noper-logo" style={{ height: 30 }} />
-          <span>English.Agency</span>
-        </h2>
-        <div className="works-specialities">
-          <span>JavaScript</span>
-          <span>Vue.js</span>
-          <span>Vue Server Renderer</span>
-          <span>NPM</span>
-          <span>Git</span>
-          <span>Google Analytics</span>
-          <span>Express</span>
-          <span>PM2</span>
-          <span>Request</span>
-        </div>
-        <div className="works-explain">
-          <p>
-            Fortuitously, we had a idea with a partner company. It was a
-            publishing platform for the recruiters of English schools to share
-            knowledge. Helped the students who were interested to know the
-            schools or culture before they went.
-          </p>
-          <p>
-            The feature was static content in server rendering. Each article is
-            easy to be found by search engine even if the recruiters publish
-            article any time.
-          </p>
-          <p>
-            Besides front end development, I built server rendering server in
-            Node.js for adding each article files when anyone publishing.
-          </p>
-        </div>
-        <a
-          href="https://tw.english.agency"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          DEMO
-        </a>
-      </div>
+      <Card
+        icon={IMAGE_PATH.LOGO}
+        iconAlt="english-agency-logo"
+        iconHeight={30}
+        link="https://tw.english.agency"
+        organs={[
+          'JavaScript',
+          'Vue.js',
+          'Vue Server Renderer',
+          'NPM',
+          'Git',
+          'Google Analytics',
+          'Express',
+          'PM2',
+          'Request',
+        ]}
+        title="English.Agency"
+      >
+        <p>
+          Fortuitously, we had a idea with a partner company. It was a
+          publishing platform for the recruiters of English schools to share
+          knowledge. Helped the students who were interested to know the schools
+          or culture before they went.
+        </p>
+        <p>
+          The feature was static content in server rendering. Each article is
+          easy to be found by search engine even if the recruiters publish
+          article any time.
+        </p>
+        <p>
+          Besides front end development, I built server rendering server in
+          Node.js for adding each article files when anyone publishing.
+        </p>
+      </Card>
     </section>
   );
 };
