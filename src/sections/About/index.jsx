@@ -1,3 +1,4 @@
+import Skills from '../../components/Skills';
 import Title from '../../components/Title';
 
 import './style.css';
@@ -18,40 +19,38 @@ const About = () => {
           ></div>
         </div>
         <div className="about-block">
-          <div className="about-skills">
-            <span style={{ bottom: '100%', left: '100%' }}>JavaScript</span>
-            <span style={{ bottom: '90%', left: '100%' }}>Git</span>
-            <span style={{ bottom: '70%', left: '80%' }}>React</span>
-            <span style={{ bottom: '60%', left: '70%' }}>React Native</span>
-            <span style={{ bottom: '70%', left: '30%' }}>AngularJS</span>
-            <span style={{ bottom: '70%', left: '60%' }}>Vue.js</span>
-            <span style={{ bottom: '40%', left: '50%' }}>
-              Vue Server Renderer
-            </span>
-            <span style={{ bottom: '40%', left: '10%' }}>SASS</span>
-            <span style={{ bottom: '40%', left: '90%' }}>Webpack</span>
-            <span style={{ bottom: '50%', left: '80%' }}>NPM</span>
-            <span style={{ bottom: '50%', left: '30%' }}>Google Analytics</span>
-            <span style={{ bottom: '60%', left: '40%' }}>Express</span>
-            <span style={{ bottom: '60%', left: '20%' }}>Scrum</span>
-            <span style={{ bottom: '80%', left: '30%' }}>LINE Bot SDK</span>
-            <span style={{ bottom: '50%', left: '60%' }}>PM2</span>
-            <span style={{ bottom: '80%', left: '90%' }}>RESTful API</span>
-            <span style={{ bottom: '30%', left: '50%' }}>Axios</span>
-            <span style={{ bottom: '30%', left: '80%' }}>SVG</span>
-            <span style={{ bottom: '30%', left: '20%' }}>Request</span>
-            <span style={{ bottom: '20%', left: '70%' }}>SQLite</span>
-            <span style={{ bottom: '30%', left: '50%' }}>WebSocket</span>
-            <span style={{ bottom: '20%', left: '40%' }}>WebGL</span>
-            <span style={{ bottom: '90%', left: '30%' }}>HTML5</span>
-            <span style={{ bottom: '80%', left: '60%' }}>CSS3</span>
-            <span style={{ bottom: '20%', left: '10%' }}>Python</span>
-            <span style={{ bottom: '10%', left: '20%' }}>PHP</span>
-            <span style={{ bottom: '90%', left: '80%' }}>UX Design</span>
-            <span style={{ bottom: '90%', left: '50%' }}>UI Design</span>
-            <i>Experience</i>
-            <i>Frequency</i>
-          </div>
+          <Skills
+            items={{
+              angular: { experience: 7, frequency: 3, name: 'AngularJS' },
+              axios: { experience: 3, frequency: 5, name: 'Axios' },
+              bot: { experience: 8, frequency: 3, name: 'LINE Bot' },
+              css3: { experience: 8, frequency: 6, name: 'CSS3' },
+              express: { experience: 6, frequency: 4, name: 'Express' },
+              ga: { experience: 5, frequency: 3, name: 'GA' },
+              git: { experience: 9, frequency: 10, name: 'Git' },
+              html5: { experience: 9, frequency: 3, name: 'HTML5' },
+              js: { experience: 10, frequency: 10, name: 'JavaScript' },
+              npm: { experience: 5, frequency: 8, name: 'NPM' },
+              php: { experience: 1, frequency: 2, name: 'PHP' },
+              pm2: { experience: 5, frequency: 6, name: 'PM2' },
+              python: { experience: 2, frequency: 1, name: 'Python' },
+              react: { experience: 7, frequency: 8, name: 'React' },
+              request: { experience: 3, frequency: 2, name: 'Request' },
+              restful: { experience: 8, frequency: 9, name: 'RESTful API' },
+              rn: { experience: 6, frequency: 7, name: 'React Native' },
+              sass: { experience: 4, frequency: 1, name: 'SASS' },
+              scrum: { experience: 6, frequency: 2, name: 'Scrum' },
+              sqlite: { experience: 2, frequency: 7, name: 'SQLite' },
+              svg: { experience: 3, frequency: 8, name: 'SVG' },
+              ui: { experience: 9, frequency: 5, name: 'UI' },
+              ux: { experience: 9, frequency: 8, name: 'UX' },
+              vsr: { experience: 4, frequency: 5, name: 'VSR' },
+              vue: { experience: 7, frequency: 6, name: 'Vue.js' },
+              webgl: { experience: 2, frequency: 4, name: 'WebGL' },
+              webpack: { experience: 4, frequency: 9, name: 'Webpack' },
+              websocket: { experience: 3, frequency: 5, name: 'WebSocket' },
+            }}
+          />
         </div>
       </div>
       <div className="about-bio">

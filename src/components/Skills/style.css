@@ -1,0 +1,47 @@
+.skills {
+  position: relative;
+  padding: 20px;
+  width: 300px;
+  height: 220px;
+  background-color: #ccc;
+  border-left: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  text-align: left;
+}
+
+.skills span {
+  position: absolute;
+  display: inline-block;
+  padding: 1px 6px 2px;
+  transform: translate(-50%, 50%);
+  background-color: #e04747;
+  border-radius: 10px;
+  white-space: nowrap;
+  line-height: initial;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.skills i {
+  position: absolute;
+  font-size: 14px;
+  color: #999;
+}
+
+.skills i:first-of-type {
+  left: -20px;
+  top: 72px;
+  transform-origin: top left;
+  transform: rotateZ(-90deg);
+}
+
+.skills i:nth-of-type(2) {
+  bottom: -17px;
+  right: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .skills {
+    width: 220px;
+  }
+}

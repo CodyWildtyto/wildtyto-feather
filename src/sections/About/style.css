@@ -34,48 +34,6 @@ section#About .about-avatar {
     background-repeat: no-repeat;
 }
 
-section#About .about-skills {
-    position: relative;
-    padding: 20px;
-    width: 300px;
-    height: 220px;
-    background-color: #ccc;
-    border-left: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
-    text-align: left;
-}
-
-section#About .about-skills span {
-    position: absolute;
-    display: inline-block;
-    padding: 1px 6px 2px;
-    transform: translate(-50%, 50%);
-    background-color: #e04747;
-    border-radius: 10px;
-    white-space: nowrap;
-    line-height: initial;
-    font-size: 10px;
-    color: #ffffff;
-}
-
-section#About .about-skills i {
-    position: absolute;
-    font-size: 14px;
-    color: #999;
-}
-
-section#About .about-skills i:first-of-type {
-    left: -20px;
-    top: 72px;
-    transform-origin: top left;
-    transform: rotateZ(-90deg);
-}
-
-section#About .about-skills i:nth-of-type(2) {
-    bottom: -17px;
-    right: 0;
-}
-
 @media only screen and ( max-width: 1023px ) {
 
     section#About {
@@ -92,17 +50,10 @@ section#About .about-skills i:nth-of-type(2) {
     }
 
     section#About .about-avatar,
-    section#About .about-skills {
+    section#About .skills {
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    section#About .about-avatar {
-    }
-
-    section#About .about-skills {
-        width: 220px;
     }
 
     section#About .about-bio {
