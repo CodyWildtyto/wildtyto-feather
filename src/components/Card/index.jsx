@@ -21,7 +21,7 @@ const Card = ({
       </h2>
       <div className="card-specialities">
         {organs?.map((item) => (
-          <span style={{ backgroundColor: organColor }}>{item}</span>
+          <span key={item} style={{ backgroundColor: organColor }}>{item}</span>
         ))}
       </div>
       <div className="card-explain">{children}</div>

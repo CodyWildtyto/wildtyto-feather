@@ -18,8 +18,8 @@ const SkillItem = ({ experience = 0, frequency = 0, name }) => {
 const Skills = ({ items }) => {
   return (
     <div className="skills">
-      {Object.values(items).map((props) => (
-        <SkillItem {...props} />
+      {Object.keys(items).map((key) => (
+        <SkillItem key={key} {...items[key]} />
       ))}
       <i>Experience</i>
       <i>Frequency</i>
