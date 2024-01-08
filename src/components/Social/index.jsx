@@ -18,7 +18,7 @@ const Social = () => {
       </a>
       <a
         className="iconLinkedin"
-        href="https://www.linkedin.com/in/wildtyto/"
+        href="https://www.linkedin.com/in/codyhjlin/"
         target="_blank"
         rel="noopener noreferrer"
       >
