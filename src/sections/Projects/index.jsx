@@ -26,13 +26,13 @@ const Projects = () => {
             The plugin is able to insert SVG elements which are modifiable
             instead of IMG or OBJECT elements from SVG files.
           </p>
-          <a
+          {/* <a
             href="https://github.com/Wildtyto/SVGTag.js"
             target="_blank"
             rel="noopener noreferrer"
           >
             DEMO
-          </a>
+          </a> */}
         </div>
         <div className="projects-project-item projects-project-2">
           <img
@@ -45,13 +45,13 @@ const Projects = () => {
             The plugin execute stunt-man and preview when image file is been
             loading likes interlaced images.
           </p>
-          <a
+          {/* <a
             href="https://github.com/Wildtyto/Interlace.js"
             target="_blank"
             rel="noopener noreferrer"
           >
             DEMO
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
