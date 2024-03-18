@@ -5,7 +5,7 @@ import * as Wheel from '../../utils/wheel';
 
 import './style.css';
 
-const DEFAULT_OFFSET_Y = 160;
+const DEFAULT_OFFSET_Y = 80;
 const IMAGE_PATH = {
   LOGO: '/assets/works-showhi-logo.png',
   PIC: '/assets/works-showhi-pic-1.png',
@@ -51,7 +51,7 @@ const ShowHi = () => {
         iconAlt="showhi-logo"
         iconHeight={24}
         organColor="#e04747"
-        organs={['JavaScript', 'AngularJS', 'Git', 'XMLHttpRequest']}
+        organs={['AngularJS']}
         title="ShowHi"
       >
         <p>

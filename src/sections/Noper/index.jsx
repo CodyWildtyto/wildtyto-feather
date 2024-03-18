@@ -53,20 +53,11 @@ const Noper = () => {
         icon={IMAGE_PATH.LOGO}
         iconAlt="noper-logo"
         iconHeight={30}
-        link="https://www.noper.in"
         organColor="#009ecc"
         organs={[
           'JavaScript',
-          'Webpack',
           'LINE Bot SDK',
           'React',
-          'NPM',
-          'Git',
-          'Google Analytics',
-          'Express',
-          'WebSocket',
-          'PM2',
-          'Axios',
         ]}
         title="noper"
       >

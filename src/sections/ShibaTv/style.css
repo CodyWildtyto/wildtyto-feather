@@ -1,23 +1,19 @@
 section#ShibaTv {
     display: flex;
     position: relative;
-    height: 700px;
-    background-color: #7d76a4;
+    height: 800px;
+    background-color: #c59c70;
     background-size: 600px;
-    background-size: 45vw;
+    background-size: 30vw, 30vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 47% 50%, 60% 30%;
+    background-position: 85% 50%, 93% 50%;
 }
 
 section#ShibaTv .card {
     top: 230px;
-    left: 50%;
-    right: 10%;
-}
-
-section#ShibaTv .card h2 {
-    padding-left: 28px;
+    right: 50%;
+    left: 10%;
 }
 
 section#ShibaTv .card img {
@@ -27,9 +23,9 @@ section#ShibaTv .card img {
 @media only screen and ( max-width: 1023px ) {
 
     section#ShibaTv {
-        height: 750px;
-        background-position: 50% 70%;
-        background-size: 350px;
+        height: 700px;
+        background-position: 35%, 70%;
+        background-size: 280px;
         background-attachment: scroll;
     }
 

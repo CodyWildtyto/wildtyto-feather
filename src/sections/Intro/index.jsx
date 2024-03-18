@@ -17,11 +17,10 @@ const Intro = () => {
       <Hello />
       <div className="intro-shortcuts">
         <Shortcut
-          href="/#/noper"
-          imgUrl={IMAGE_PATH.NOPER}
-          name="noper"
-          subtitle="The Recently Works"
-          title="noper"
+          href="/#/works"
+          imgUrl={IMAGE_PATH.WORKS}
+          name="works"
+          title="Works"
         />
         <Shortcut
           href="/#/about"
@@ -30,10 +29,11 @@ const Intro = () => {
           title="About"
         />
         <Shortcut
-          href="/#/works"
-          imgUrl={IMAGE_PATH.WORKS}
-          name="works"
-          title="Works"
+          href="/#/noper"
+          imgUrl={IMAGE_PATH.NOPER}
+          name="noper"
+          subtitle="The Classic Work"
+          title="noper"
         />
         <Shortcut
           href="/#/projects"

@@ -1,6 +1,6 @@
 section#Intro {
     display: flex;
-    padding-left: 450px;
+    padding-left: 15vw;
     height: 750px;
     flex-direction: row;
 }

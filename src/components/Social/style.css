@@ -5,13 +5,13 @@
 }
 
 #Navigator .social {
-    position: fixed;
-    bottom: 70px;
-    left: 140px;
-    flex-direction: row;
     animation: nav-items-visible 300ms;
-    visibility: initial;
+    flex-direction: row;
     opacity: 1;
+    position: fixed;
+    right: 30px;
+    top: 24px;
+    visibility: initial;
 }
 
 #Navigator.isbottom .social {
@@ -46,4 +46,13 @@
 
 #Navigator .social a:hover svg path {
     fill: #777777;
+}
+
+@media only screen and (min-width: 768px) {
+    #Navigator .social {
+        bottom: 70px;
+        left: 140px;
+        right: auto;
+        top: auto;
+    }
 }

@@ -10,7 +10,7 @@ const Social = () => {
     <div className="social">
       <a
         className="iconGithub"
-        href="https://github.com/Wildtyto"
+        href="https://github.com/CodyWildtyto"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -24,7 +24,7 @@ const Social = () => {
       >
         <img src={IMAGE_PATH.LINKEDIN} alt="nav-linkedin-icon" />
       </a>
-      <a className="iconMail" href="mailto:wildtyto@gmail.com">
+      <a className="iconMail" href="mailto:cody.wildtyto@gmail.com">
         <img src={IMAGE_PATH.MAIL} alt="nav-mail-icon" />
       </a>
     </div>

@@ -45,7 +45,7 @@
 }
 
 .intro-noper {
-  top: 0;
+  top: 50%;
   left: 0;
   background-position-x: left;
   background-position-y: 45%;
@@ -70,7 +70,7 @@
 }
 
 .intro-works {
-  top: 50%;
+  top: 0;
   left: 0;
   background-position: center left;
   background-size: 120%;

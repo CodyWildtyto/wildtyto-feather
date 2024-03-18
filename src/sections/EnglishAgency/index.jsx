@@ -56,17 +56,9 @@ const EnglishAgency = () => {
         icon={IMAGE_PATH.LOGO}
         iconAlt="english-agency-logo"
         iconHeight={30}
-        link="https://tw.english.agency"
         organs={[
-          'JavaScript',
           'Vue.js',
           'Vue Server Renderer',
-          'NPM',
-          'Git',
-          'Google Analytics',
-          'Express',
-          'PM2',
-          'Request',
         ]}
         title="English.Agency"
       >

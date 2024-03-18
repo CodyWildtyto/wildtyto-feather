@@ -37,8 +37,8 @@ section#About .about-avatar {
 @media only screen and ( max-width: 1023px ) {
 
     section#About {
-        padding-bottom: 50px;
-        padding-top: 200px;
+        padding-top: 60px;
+        min-height: 600px;
     }
 
     section#About h3 {
