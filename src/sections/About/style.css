@@ -17,11 +17,7 @@ section#About .about-bio {
     max-width: 560px;
     text-align: left;
     text-align: justify;
-}
-
-section#About .about-bio p {
-    margin-top: 0;
-    margin-bottom: 30px;
+    white-space: pre-wrap;
 }
 
 section#About .about-avatar {

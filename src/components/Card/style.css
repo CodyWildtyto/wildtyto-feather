@@ -1,6 +1,6 @@
 .card {
   position: absolute;
-  padding: 30px;
+  padding: 30px 30px 40px;
   background-color: #fff;
 }
 
@@ -39,6 +39,7 @@
 .card .card-explain {
   font-size: 14px;
   margin-top: 30px;
+  white-space: pre-wrap;
 }
 
 .card > a {

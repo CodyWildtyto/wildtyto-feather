@@ -1,4 +1,5 @@
 import Title from '../../components/Title';
+import { DESCRIPTION } from '../../configs/variables';
 
 import './style.css';
 
@@ -7,11 +8,12 @@ const IMAGE_PATH = {
   ICON_INTERLACE: './assets/projects-icon-interlace.png',
 };
 
-const Projects = () => {
+function Projects () {
   return (
     <section id="Projects">
       <Title
-        description="That is exciting to design plugins and tools. I usually have idea when I developed the products. It will be more and more. Here are two public project I pushed on repositories."
+        description={DESCRIPTION.PROJECTS}
+        subtitle=""
         title="Projects"
       />
       <div className="projects-container">
@@ -56,6 +58,6 @@ const Projects = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Projects;
