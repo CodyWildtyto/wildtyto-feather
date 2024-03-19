@@ -2,17 +2,29 @@ import { memo } from 'react';
 
 import './style.css';
 
-const Card = ({
+type TCard = {
+  children: string | JSX.Element | JSX.Element[];
+  icon: string;
+  iconAlt: string;
+  iconHeight: number;
+  link?: string;
+  linkText?: string;
+  organColor?: string;
+  organs: string[];
+  title: string;
+}
+
+function Card ({
   children,
   icon,
   iconAlt,
   iconHeight,
   link,
-  linkText = 'DEMO',
-  organColor = '#3f3f3f',
+  linkText,
+  organColor,
   organs,
   title,
-}) => {
+}: TCard) {
   return (
     <div className="card">
       <h2>
@@ -32,6 +44,12 @@ const Card = ({
       )}
     </div>
   );
-};
+}
+
+Card.defaultProps = {
+  link: '',
+  linkText: 'DEMO',
+  organColor: '#3f3f3f',
+}
 
 export default memo(Card);

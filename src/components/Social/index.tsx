@@ -4,7 +4,7 @@ import { IMAGE_PATH } from '../../configs/constants';
 
 import './style.css';
 
-const Social = () => {
+function Social () {
 
   return (
     <div className="social">
@@ -29,6 +29,6 @@ const Social = () => {
       </a>
     </div>
   );
-};
+}
 
 export default memo(Social);

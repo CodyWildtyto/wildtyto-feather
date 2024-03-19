@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
+import Navigator from '../../sections/Navigator';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';
-import Navigator from '../../sections/Navigator';
 
-const Boundary = ({ children }) => {
+function Boundary ({ children }: { children: JSX.Element | JSX.Element[] }) {
   const [isFullview, setIsFullview] = useState(false);
 
   const onWheel = () => {
@@ -19,14 +19,14 @@ const Boundary = ({ children }) => {
 
   return (
     <div id="Boundary" className={`${isFullview ? 'fullview' : ''}`}>
-      <div className="boundary-item boundary-item__top"></div>
-      <div className="boundary-item boundary-item__bottom"></div>
-      <div className="boundary-item boundary-item__left"></div>
-      <div className="boundary-item boundary-item__right"></div>
+      <div className="boundary-item boundary-item__top" />
+      <div className="boundary-item boundary-item__bottom" />
+      <div className="boundary-item boundary-item__left" />
+      <div className="boundary-item boundary-item__right" />
       <Navigator />
       {children}
     </div>
   );
-};
+}
 
 export default Boundary;

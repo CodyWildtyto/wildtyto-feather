@@ -58,7 +58,6 @@ function Noper() {
                 icon={IMAGE_PATH.LOGO}
                 iconAlt="noper-logo"
                 iconHeight={30}
-                link=""
                 organColor="#009ecc"
                 organs={['JavaScript', 'LINE Bot SDK', 'React']}
                 title="noper"

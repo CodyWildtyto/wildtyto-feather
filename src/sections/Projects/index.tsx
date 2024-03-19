@@ -13,7 +13,6 @@ function Projects () {
     <section id="Projects">
       <Title
         description={DESCRIPTION.PROJECTS}
-        subtitle=""
         title="Projects"
       />
       <div className="projects-container">

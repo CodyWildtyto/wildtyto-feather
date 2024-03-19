@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 
 import Social from '../../components/Social';
 import Title from '../../components/Title';
-import Svg from './../../factory/Svg';
+import Svg from '../../factory/Svg';
 
 import './style.css';
 
-const Contact = () => {
+function Contact () {
   useEffect(() => {
     Svg.exchange('#Contact .iconGithub img');
     Svg.exchange('#Contact .iconLinkedin img');
@@ -20,6 +20,6 @@ const Contact = () => {
       <h3>© Wildtyto</h3>
     </footer>
   );
-};
+}
 
 export default Contact;

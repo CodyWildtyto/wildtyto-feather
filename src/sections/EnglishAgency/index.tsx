@@ -58,7 +58,6 @@ function EnglishAgency() {
                 icon={IMAGE_PATH.LOGO}
                 iconAlt="english-agency-logo"
                 iconHeight={30}
-                link=""
                 organs={['Vue.js', 'Vue Server Renderer']}
                 title="English.Agency"
             >

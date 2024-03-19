@@ -10,7 +10,7 @@ const IMAGE_PATH = {
   WORKS: '/assets/intro-works.png',
 };
 
-const Intro = () => {
+function Intro () {
   return (
     <section id="Intro">
       <Logo />
@@ -44,6 +44,6 @@ const Intro = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Intro;

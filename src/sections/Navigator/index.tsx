@@ -1,33 +1,36 @@
 import { useEffect, useRef, useState } from 'react';
 
 import Social from '../../components/Social';
+import Svg from '../../factory/Svg';
 import * as Wheel from '../../utils/wheel';
-import Svg from './../../factory/Svg';
 
 import './style.css';
 
-const Navigator = () => {
-  const footerElement = useRef();
+function Navigator () {
+  const footerElement = useRef<HTMLElement | null>();
   const [isNavmode, setIsNavmode] = useState(false);
   const [isBottom, setIsBottom] = useState(false);
 
-  const _onChanged = () => {
+  const onChanged = () => {
     setIsNavmode(
       window.innerWidth > 1023 ? window.scrollY > 300 : window.scrollY > 20
     );
-    setIsBottom(
-      window.scrollY + window.innerHeight > footerElement.current.offsetTop
-    );
+
+    if (footerElement.current) {
+      setIsBottom(
+        window.scrollY + window.innerHeight > footerElement.current.offsetTop
+      );
+    }
   };
 
   useEffect(() => {
-    footerElement.current = document.querySelector('footer#Contact');
+    footerElement.current = document.querySelector<HTMLElement>('footer#Contact');
 
     Svg.exchange('#Navigator .iconGithub img');
     Svg.exchange('#Navigator .iconLinkedin img');
     Svg.exchange('#Navigator .iconMail img');
-    _onChanged();
-    Wheel.add(_onChanged);
+    onChanged();
+    Wheel.add(onChanged);
   }, []);
 
   return (
@@ -44,6 +47,6 @@ const Navigator = () => {
       <Social />
     </div>
   );
-};
+}
 
 export default Navigator;

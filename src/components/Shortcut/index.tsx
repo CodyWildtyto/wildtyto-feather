@@ -2,7 +2,15 @@ import { memo } from 'react';
 
 import './style.css';
 
-const Shortcut = ({ name, href, imgUrl, title, subtitle }) => {
+type TShortcut = {
+    name: string;
+    href: string;
+    imgUrl: string;
+    title: string;
+    subtitle?: string;
+}
+
+function Shortcut ({ name, href, imgUrl, title, subtitle }: TShortcut) {
   return (
     <a
       className={`intro-${name} intro-shortcut-item`}
@@ -13,6 +21,10 @@ const Shortcut = ({ name, href, imgUrl, title, subtitle }) => {
       <h4>{title}</h4>
     </a>
   );
-};
+}
+
+Shortcut.defaultProps = {
+    subtitle: ''
+}
 
 export default memo(Shortcut);

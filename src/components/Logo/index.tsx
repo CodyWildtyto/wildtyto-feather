@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 
-import * as Wheel from '../../utils/wheel';
-import Svg from '../../factory/Svg';
 import logo from './logo-light.svg';
+import Svg from '../../factory/Svg';
+import * as Wheel from '../../utils/wheel';
 
 import './style.css';
 
-const Logo = () => {
+function Logo () {
   const [isBlack, setIsBlack] = useState(false);
 
   const onWheel = () => {
@@ -28,6 +28,6 @@ const Logo = () => {
       <span>Wildtyto</span>
     </nav>
   );
-};
+}
 
 export default Logo;

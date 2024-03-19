@@ -4,7 +4,7 @@ import * as Wheel from '../../utils/wheel';
 
 import './style.css';
 
-const Hello = () => {
+function Hello () {
   const [isFullview, setIsFullview] = useState(false);
 
   Wheel.add(() => {
@@ -21,6 +21,6 @@ const Hello = () => {
       </h3>
     </div>
   );
-};
+}
 
 export default Hello;

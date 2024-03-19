@@ -11,24 +11,25 @@ const IMAGE_PATH = {
   PIC: '/assets/works-showhi-pic-1.png',
 };
 
-const ShowHi = () => {
-  const sectionElement = useRef();
+function ShowHi () {
+  const sectionElement = useRef<HTMLElement | null>();
   const [offsetY, setOffsetY] = useState(DEFAULT_OFFSET_Y);
 
   const onWheel = () => {
-    let _offsetY = 0;
+    let tmpOffsetY = 0;
 
-    if (window.innerWidth > 1024) {
-      const _isAbove =
+    if (sectionElement.current && window.innerWidth > 1024) {
+      const isAbove =
         window.scrollY < sectionElement.current.offsetTop - window.innerHeight;
-      const _isBelow =
+      const isBelow =
         window.scrollY >
         sectionElement.current.offsetTop + sectionElement.current.clientHeight;
 
-      if (_isAbove || _isBelow) return;
-      _offsetY = -(window.scrollY - sectionElement.current.offsetTop);
+      if (isAbove || isBelow) return;
+      tmpOffsetY = -(window.scrollY - sectionElement.current.offsetTop);
     }
-    setOffsetY(_offsetY / 0.6 + DEFAULT_OFFSET_Y);
+
+    setOffsetY(tmpOffsetY / 0.6 + DEFAULT_OFFSET_Y);
   };
 
   useEffect(() => {
@@ -71,6 +72,6 @@ const ShowHi = () => {
       </Card>
     </section>
   );
-};
+}
 
 export default ShowHi;

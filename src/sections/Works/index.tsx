@@ -6,7 +6,7 @@ import './style.css';
 function Works() {
     return (
         <section id="Works">
-            <Title description={DESCRIPTION.WORKS} subtitle="" title="Works" />
+            <Title description={DESCRIPTION.WORKS} title="Works" />
         </section>
     );
 }
