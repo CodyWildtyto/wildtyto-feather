@@ -6,8 +6,8 @@ import * as Wheel from '../../utils/wheel';
 
 import './style.css';
 
-const DEFAULT_OFFSET_Y1 = 200;
-const DEFAULT_OFFSET_Y2 = 130;
+const DEFAULT_OFFSET_Y1 = 100;
+const DEFAULT_OFFSET_Y2 = 70;
 const IMAGE_PATH = {
     LOGO: '/assets/works-englishagency-logo.png',
     PIC_1: '/assets/works-englishagency-pic-1.png',
@@ -20,9 +20,9 @@ function EnglishAgency() {
     const [offsetY2, setOffsetY2] = useState(DEFAULT_OFFSET_Y2);
 
     const handleChanged = () => {
-        if (sectionElement.current && window.innerWidth > 1024) {
-            let offsetY = 0;
+        let offsetY = 0;
 
+        if (sectionElement.current && window.innerWidth > 1024) {
             const isAbove =
                 window.scrollY <
                 sectionElement.current.offsetTop - window.innerHeight;
@@ -33,9 +33,10 @@ function EnglishAgency() {
 
             if (isAbove || isBelow) return;
             offsetY = -(window.scrollY - sectionElement.current.offsetTop);
-            setOffsetY1(offsetY / 0.6 + DEFAULT_OFFSET_Y1);
-            setOffsetY2(offsetY / 0.7 + DEFAULT_OFFSET_Y2);
         }
+
+        setOffsetY1(offsetY / 0.6 + DEFAULT_OFFSET_Y1);
+        setOffsetY2(offsetY / 0.7 + DEFAULT_OFFSET_Y2);
     };
 
     useEffect(() => {

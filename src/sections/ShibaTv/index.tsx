@@ -20,9 +20,9 @@ function ShibaTv() {
     const [offsetY2, setOffsetY2] = useState(DEFAULT_OFFSET_Y2);
 
     const onWheel = () => {
-        if (sectionElement.current && window.innerWidth > 1024) {
-            let offsetY = 0;
+        let offsetY = 0;
 
+        if (sectionElement.current && window.innerWidth > 1024) {
             const isAbove =
                 window.scrollY <
                 sectionElement.current.offsetTop - window.innerHeight;
@@ -33,9 +33,10 @@ function ShibaTv() {
 
             if (isAbove || isBelow) return;
             offsetY = -(window.scrollY - sectionElement.current.offsetTop);
-            setOffsetY1(offsetY / 0.4 + DEFAULT_OFFSET_Y1);
-            setOffsetY2(offsetY / 0.6 + DEFAULT_OFFSET_Y2);
         }
+
+        setOffsetY1(offsetY / 0.4 + DEFAULT_OFFSET_Y1);
+        setOffsetY2(offsetY / 0.6 + DEFAULT_OFFSET_Y2);
     };
 
     useEffect(() => {
