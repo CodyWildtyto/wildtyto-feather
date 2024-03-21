@@ -18,7 +18,7 @@ function Social () {
       </a>
       <a
         className="iconLinkedin"
-        href="https://www.linkedin.com/in/codyhjlin/"
+        href="https://www.linkedin.com/in/codywildtyto"
         target="_blank"
         rel="noopener noreferrer"
       >
