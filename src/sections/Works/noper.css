@@ -5,19 +5,19 @@ section#Noper {
     background-color: #009ecc;
     background-size: 600px;
     background-size: 14vw;
-    background-size: calc( 200px + 4vw );
+    background-size: calc(200px + 4vw);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 52% 50%, 38% 30%;
 }
 
 section#Noper .card {
-  top: 200px;
-  left: 50%;
-  width: 45%;
+    top: 200px;
+    left: 50%;
+    width: 45%;
 }
 
-@media only screen and ( max-width: 1023px ) {
+@media only screen and (max-width: 1023px) {
 
     section#Noper {
         height: 900px;
@@ -26,11 +26,11 @@ section#Noper .card {
         background-attachment: scroll;
     }
 
-  section#Noper .card {
-    top: 340px;
-    left: 10px;
-    right: 10px;
-    width: auto;
-  }
+    section#Noper .card {
+        top: 340px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+    }
 
 }
