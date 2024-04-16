@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { IMAGE_PATH } from '../../configs/constants';
+import { IMAGE_PATH } from '../../configs';
 
 import './style.css';
 

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import Social from '../../components/Social';
 import Title from '../../components/Title';
-import Svg from '../../factory/Svg';
+import Svg from '../../utils/Svg';
 
 import './style.css';
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import logo from './logo-light.svg';
-import Svg from '../../factory/Svg';
+import Svg from '../../utils/Svg';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';

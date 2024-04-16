@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import Card from '../../components/Card';
-import { DESCRIPTION } from '../../configs/variables';
+import { DESCRIPTION } from '../../i18n/en';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';

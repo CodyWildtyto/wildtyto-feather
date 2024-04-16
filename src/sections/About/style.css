@@ -14,7 +14,7 @@ section#About .about-profile {
 
 section#About .about-bio {
     margin: auto;
-    max-width: 560px;
+    max-width: 520px;
     text-align: left;
     text-align: justify;
     white-space: pre-wrap;

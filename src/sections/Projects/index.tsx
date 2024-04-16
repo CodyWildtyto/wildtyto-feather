@@ -1,5 +1,5 @@
 import Title from '../../components/Title';
-import { DESCRIPTION } from '../../configs/variables';
+import { DESCRIPTION } from '../../i18n/en';
 
 import './style.css';
 

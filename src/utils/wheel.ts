@@ -1,4 +1,5 @@
-import { SECTION_NAME } from '../configs/constants';
+import { SECTION_NAME } from "../i18n/en";
+
 
 const callbackList: Array<
 (event?: WheelEvent | TouchEvent | UIEvent | Event) => void

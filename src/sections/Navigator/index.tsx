@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import Social from '../../components/Social';
-import Svg from '../../factory/Svg';
+import Svg from '../../utils/Svg';
 import * as Wheel from '../../utils/wheel';
 
 import './style.css';
