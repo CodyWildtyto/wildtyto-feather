@@ -10,6 +10,7 @@ section#About {
 section#About .about-profile {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 
 section#About .about-bio {
@@ -26,19 +27,18 @@ section#About .about-avatar {
     width: 220px;
     height: 220px;
     background-position: 55% 36%;
-    background-size: 130%;
+    background-size: 120%;
     background-repeat: no-repeat;
 }
 
-@media only screen and ( max-width: 1023px ) {
-
+@media only screen and (max-width: 1023px) {
     section#About {
         padding-top: 60px;
         min-height: 600px;
     }
 
     section#About h3 {
-        font-size: 32px
+        font-size: 32px;
     }
 
     section#About .about-profile {
@@ -57,5 +57,4 @@ section#About .about-avatar {
         padding-right: 60px;
         font-size: 13px;
     }
-
 }

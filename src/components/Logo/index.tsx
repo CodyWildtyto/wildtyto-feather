@@ -24,8 +24,8 @@ function Logo () {
   return (
     <nav id="Logo" className={`${isBlack ? 'black' : ''}`}>
       <img src={logo} alt="logo" />
-      <span>Cody</span>
-      <span>Wildtyto</span>
+      {/* <span>Cody</span> */}
+      {/* <span>Wildtyto</span> */}
     </nav>
   );
 }

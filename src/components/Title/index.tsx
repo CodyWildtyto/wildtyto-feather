@@ -11,9 +11,9 @@ type TTitleProps = {
 function Title({ title, description, subtitle }: TTitleProps) {
     return (
         <div className="title">
-            <h2>{title}</h2>
-            <h3>{subtitle}</h3>
-            <p>{description}</p>
+            {title && <h2>{title}</h2>}
+            {subtitle && <h3>{subtitle}</h3>}
+            {description && <p>{description}</p>}
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 
-import App from './components/App';
+import App from './layouts/App';
 import reportWebVitals from './utils/reportWebVitals';
 
 import './index.css';

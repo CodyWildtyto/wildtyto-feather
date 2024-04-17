@@ -4,7 +4,7 @@ import Shortcut from '../../components/Shortcut';
 import './style.css';
 
 const IMAGE_PATH = {
-  CODY: '/assets/intro-cody.png',
+  CODY: '/assets/intro-cody.jpeg',
   NOPER: '/assets/intro-noper.png',
   PROJECT: '/assets/intro-project.png',
   WORKS: '/assets/intro-works.png',

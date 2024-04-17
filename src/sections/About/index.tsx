@@ -12,7 +12,7 @@ const IMAGE_PATH = {
 function About() {
     return (
         <section id="About">
-            <Title subtitle="Cody Wildtyto" title="About" />
+            <Title subtitle="Cody" title="About" />
             <div className="about-profile">
                 <div className="about-block">
                     <div
