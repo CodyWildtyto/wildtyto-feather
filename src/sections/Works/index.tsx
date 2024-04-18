@@ -3,10 +3,12 @@ import Work from '../../components/Work';
 import { DESCRIPTION } from '../../i18n/en';
 
 import './style.css';
+import './btse.css';
 import './english-agency.css';
 import './noper.css';
 import './shiba-tv.css';
 import './showhi.css';
+import './telasa.css';
 
 function Works() {
     return (
@@ -16,10 +18,56 @@ function Works() {
             </section>
             <Work
                 {...{
+                    description: DESCRIPTION.WORK_TELASA,
+                    id: 'Telasa',
+                    link: 'https://telasa.jp',
+                    logoUrl: '/assets/works-telasa-logo.png',
+                    name: 'telasa',
+                    organColor: '#c59c70',
+                    organs: ['React', 'Next.js', 'TypeScript'],
+                    thumbnails: [
+                        {
+                            imageUrl: '/assets/works-telasa-pic-1.png',
+                            offsetY: 120,
+                            rateY: 0.4,
+                        },
+                        {
+                            imageUrl: '/assets/works-telasa-pic-2.png',
+                            offsetY: 60,
+                            rateY: 0.6,
+                        },
+                    ],
+                }}
+            />
+            <Work
+                {...{
+                    description: DESCRIPTION.WORK_BTSE,
+                    iconHeight: 24,
+                    id: 'Btse',
+                    link: 'https://www.btse.com/en/futures',
+                    logoUrl: '/assets/works-btse-logo.png',
+                    name: 'btse',
+                    organs: ['Vue.js', 'Vuex'],
+                    thumbnails: [
+                        {
+                            imageUrl: '/assets/works-btse-pic-1.png',
+                            offsetY: 120,
+                            rateY: 0.4,
+                        },
+                        {
+                            imageUrl: '/assets/works-btse-pic-2.png',
+                            offsetY: 60,
+                            rateY: 0.6,
+                        },
+                    ],
+                }}
+            />
+            <Work
+                {...{
                     description: DESCRIPTION.WORK_SHIBATV,
                     iconHeight: 24,
                     id: 'ShibaTv',
-                    link: 'https://codywildtyto.github.io/shiba-tv',
+                    // link: 'https://codywildtyto.github.io/shiba-tv',
                     logoUrl: '/assets/works-shibatv-logo.png',
                     name: 'shiba-tv',
                     organColor: '#c69c6d',
@@ -103,7 +151,7 @@ function Works() {
                     title: 'English.Agency',
                 }}
             />
-            <Work
+            {/* <Work
                 {...{
                     description: DESCRIPTION.WORK_SHOW_HI,
                     id: 'ShowHi',
@@ -120,7 +168,7 @@ function Works() {
                     ],
                     title: 'ShowHi',
                 }}
-            />
+            /> */}
         </>
     );
 }

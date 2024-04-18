@@ -13,13 +13,14 @@ type TWorkProps = {
     organColor?: string;
     organs: string[];
     thumbnails: Array<{ imageUrl: string; offsetY: number; rateY: number }>;
-    title: string;
+    title?: string;
 } & typeof defaultProps;
 
 const defaultProps = {
     iconHeight: 30,
     link: '',
-    organColor: '',
+    organColor: '#3f3f3f',
+    title: '',
 };
 
 function Work({

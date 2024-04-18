@@ -1,4 +1,4 @@
-section#ShibaTv {
+section#Telasa {
     display: flex;
     position: relative;
     height: 670px;
@@ -7,29 +7,29 @@ section#ShibaTv {
     background-size: 30vw, 30vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 82% 50%, 88% 50%;
+    background-position: 80% 50%, 88% 50%;
 }
 
-section#ShibaTv .card {
+section#Telasa .card {
     top: 170px;
     right: 50%;
     left: 10%;
 }
 
-section#ShibaTv .card img {
+section#Telasa .card img {
     margin-top: 3px;
 }
 
 @media only screen and ( max-width: 1023px ) {
 
-    section#ShibaTv {
+    section#Telasa {
         height: 700px;
         background-position: 35%, 70%;
         background-size: 280px;
         background-attachment: scroll;
     }
 
-    section#ShibaTv .card {
+    section#Telasa .card {
         top: 260px;
         left: 10px;
         right: 10px;

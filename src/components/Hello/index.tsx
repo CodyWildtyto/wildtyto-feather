@@ -16,7 +16,7 @@ function Hello () {
       <h2>Hello!</h2>
       <h3>
         <p>I am a</p>
-        <p>Full Stack Developer</p>
+        <p>Full Stack Engineer</p>
         <p>& UX Designer</p>
       </h3>
     </div>
