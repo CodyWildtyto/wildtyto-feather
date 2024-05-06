@@ -24,7 +24,14 @@ function Works() {
                     logoUrl: '/assets/works-telasa-logo.png',
                     name: 'telasa',
                     organColor: '#c59c70',
-                    organs: ['React', 'Next.js', 'TypeScript'],
+                    organs: [
+                        'React',
+                        'Next.js',
+                        'TypeScript',
+                        'Node.js',
+                        'Redux',
+                        'MUI',
+                    ],
                     thumbnails: [
                         {
                             imageUrl: '/assets/works-telasa-pic-1.png',
@@ -47,7 +54,7 @@ function Works() {
                     link: 'https://www.btse.com/en/futures',
                     logoUrl: '/assets/works-btse-logo.png',
                     name: 'btse',
-                    organs: ['Vue.js', 'Vuex'],
+                    organs: ['Vue.js', 'Vuex', 'Node.js'],
                     thumbnails: [
                         {
                             imageUrl: '/assets/works-btse-pic-1.png',
@@ -62,35 +69,37 @@ function Works() {
                     ],
                 }}
             />
-            <Work
-                {...{
-                    description: DESCRIPTION.WORK_SHIBATV,
-                    iconHeight: 24,
-                    id: 'ShibaTv',
-                    // link: 'https://codywildtyto.github.io/shiba-tv',
-                    logoUrl: '/assets/works-shibatv-logo.png',
-                    name: 'shiba-tv',
-                    organColor: '#c69c6d',
-                    organs: ['React', 'TypeScript'],
-                    thumbnails: [
-                        {
-                            imageUrl: '/assets/works-shibatv-pic-1.png',
-                            offsetY: 120,
-                            rateY: 0.4,
-                        },
-                        {
-                            imageUrl: '/assets/works-shibatv-pic-2.png',
-                            offsetY: 60,
-                            rateY: 0.6,
-                        },
-                    ],
-                    title: 'SHIBA TV',
-                }}
-            />
+            {false && (
+                <Work
+                    {...{
+                        description: DESCRIPTION.WORK_SHIBATV,
+                        iconHeight: 24,
+                        id: 'ShibaTv',
+                        logoUrl: '/assets/works-shibatv-logo.png',
+                        name: 'shiba-tv',
+                        organColor: '#c69c6d',
+                        organs: ['React', 'TypeScript'],
+                        thumbnails: [
+                            {
+                                imageUrl: '/assets/works-shibatv-pic-1.png',
+                                offsetY: 120,
+                                rateY: 0.4,
+                            },
+                            {
+                                imageUrl: '/assets/works-shibatv-pic-2.png',
+                                offsetY: 60,
+                                rateY: 0.6,
+                            },
+                        ],
+                        title: 'SHIBA TV',
+                    }}
+                />
+            )}
             <Work
                 {...{
                     description: DESCRIPTION.WORK_NOPER,
                     id: 'Noper',
+                    link: 'https://wildtyto.com/awesork-backup',
                     logoUrl: '/assets/works-noper-logo.png',
                     name: 'noper',
                     organColor: '#009ecc',
@@ -99,12 +108,7 @@ function Works() {
                         'JavaScript',
                         'Node.js',
                         'LINE Bot SDK',
-                        'GraphQL',
-                        'Webpack',
-                        'Express.js',
-                        'Jest',
                         'DialogFlow',
-                        'Google Analytics',
                     ],
                     thumbnails: [
                         {
@@ -127,15 +131,7 @@ function Works() {
                     id: 'EnglishAgency',
                     logoUrl: '/assets/works-englishagency-logo.png',
                     name: 'english-agency',
-                    organs: [
-                        'Vue.js',
-                        'Vuex',
-                        'Vue SSR',
-                        'Node.js',
-                        'Webpack',
-                        'Express.js',
-                        'Google Analytics',
-                    ],
+                    organs: ['Vue.js', 'Vuex', 'Vue SSR', 'Node.js'],
                     thumbnails: [
                         {
                             imageUrl: '/assets/works-englishagency-pic-1.png',
@@ -151,24 +147,26 @@ function Works() {
                     title: 'English.Agency',
                 }}
             />
-            {/* <Work
-                {...{
-                    description: DESCRIPTION.WORK_SHOW_HI,
-                    id: 'ShowHi',
-                    logoUrl: '/assets/works-showhi-logo.png',
-                    name: 'showhi',
-                    organColor: '#e04747',
-                    organs: ['AngularJS'],
-                    thumbnails: [
-                        {
-                            imageUrl: '/assets/works-showhi-pic-1.png',
-                            offsetY: 80,
-                            rateY: 0.6,
-                        },
-                    ],
-                    title: 'ShowHi',
-                }}
-            /> */}
+            {false && (
+                <Work
+                    {...{
+                        description: DESCRIPTION.WORK_SHOW_HI,
+                        id: 'ShowHi',
+                        logoUrl: '/assets/works-showhi-logo.png',
+                        name: 'showhi',
+                        organColor: '#e04747',
+                        organs: ['AngularJS'],
+                        thumbnails: [
+                            {
+                                imageUrl: '/assets/works-showhi-pic-1.png',
+                                offsetY: 80,
+                                rateY: 0.6,
+                            },
+                        ],
+                        title: 'ShowHi',
+                    }}
+                />
+            )}
         </>
     );
 }

@@ -3,17 +3,17 @@ import { memo } from 'react';
 import './style.css';
 
 type TSkillItem = {
-    experience: number;
-    frequency: number;
     name: string;
+    x: number;
+    y: number;
 };
 
-function SkillItem({ experience = 0, frequency = 0, name }: TSkillItem) {
+function SkillItem({ name, x = 0, y = 0 }: TSkillItem) {
     return (
         <span
             style={{
-                bottom: `${experience * 10}%`,
-                left: `${frequency * 10}%`,
+                bottom: `${y * 10}%`,
+                left: `${x * 10}%`,
             }}
         >
             {name}
@@ -31,14 +31,12 @@ function Skills({ items }: TSkills) {
     return (
         <div className="skills">
             {Object.keys(items).map((key) => {
-                const { experience, frequency, name } = items[key];
+                const { x, y, name } = items[key];
 
-                return (
-                    <SkillItem key={key} {...{ experience, frequency, name }} />
-                );
+                return <SkillItem key={key} {...{ x, y, name }} />;
             })}
-            <i>Experience</i>
-            <i>Frequency</i>
+            {/* <i>Experience</i> */}
+            {/* <i>Frequency</i> */}
         </div>
     );
 }

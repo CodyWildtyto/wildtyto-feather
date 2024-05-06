@@ -17,7 +17,7 @@ function Contact () {
     <footer id="Contact">
       <Title title="Thank You" />
       <Social />
-      <h3>© Wildtyto</h3>
+      <h3>© Cody Lin</h3>
     </footer>
   );
 }
