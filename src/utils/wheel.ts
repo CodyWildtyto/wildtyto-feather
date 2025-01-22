@@ -2,7 +2,7 @@ import { SECTION_NAME } from "../i18n/en";
 
 
 const callbackList: Array<
-(event?: WheelEvent | TouchEvent | UIEvent | Event) => void
+(event?: Event) => void
 > = [];
 
 let isWheeling = false;
@@ -13,7 +13,7 @@ export const add = (callback: () => void) => {
   callbackList.push(callback);
 };
 
-const inspectWheel = (event: WheelEvent | TouchEvent | UIEvent | Event) => {
+const inspectWheel = (event: Event) => {
   const tempTimestamp = Date.now();
 
   if (tempTimestamp - currentTimestamp < 30) return;
