@@ -17,14 +17,15 @@
   left: 0;
   right: 0;
   z-index: -1;
-  opacity: 0;
+  opacity: 1;
   transition: 300ms opacity;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
   content: '';
 }
 
 .intro-shortcut-item:hover::before {
-  opacity: 1;
+  opacity: 0;
 }
 
 .intro-shortcut-item h4,
@@ -85,6 +86,10 @@
 @media only screen and (max-width: 1360px) {
   .intro-shortcut-item {
     padding: 30px;
+  }
+
+  .intro-shortcut-item::before {
+    opacity: 0;
   }
 }
 
